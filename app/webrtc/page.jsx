@@ -26,8 +26,8 @@ const Page = () => {
         WebRTC is a powerful open-source project that enables real-time communication in web browsers. It allows developers to build applications with audio, video, and data sharing capabilities directly within the browser.
         <span className="whitespace-nowrap text-sm">— WebRTC Consortium</span>
       </blockquote>
-      <p>WebRTC has revolutionized the way we communicate online, providing a standardized set of protocols and APIs that make it easy to incorporate real-time features into web applications. In this blog post, we'll delve into the key features that make WebRTC a game-changer for developers.</p>
-      <p>Let's explore the capabilities and advantages of WebRTC.</p>
+      <p>WebRTC has revolutionized the way we communicate online, providing a standardized set of protocols and APIs that make it easy to incorporate real-time features into web applications. In this blog post, we&apos;ll delve into the key features that make WebRTC a game-changer for developers.</p>
+      <p>Let&apos;s explore the capabilities and advantages of WebRTC.</p>
       {/* More content goes here */}
     </div>
   </article>
