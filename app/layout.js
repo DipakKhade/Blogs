@@ -2,6 +2,11 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Providers from './Providers'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import ThemeButton from '@/components/ThemeButton'
+import DropDownButton from '@/components/DropDownButton'
+import SearchButton from '@/components/SearchButton'
+import NextTopLoader from 'nextjs-toploader';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -15,8 +20,13 @@ export default function RootLayout({ children }) {
    
       <body className={inter.className}>
       <Providers>
+      <NextTopLoader />
       <Header/>
+      <SearchButton/>
+    <ThemeButton/>
+    <DropDownButton/>
       {children}
+      <Footer/>
     </Providers>
       </body>
 
