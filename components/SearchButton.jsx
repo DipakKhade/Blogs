@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 
 const SearchButton = () => {
   return (
-    <div className='fixed right-24 text-3xl top-10'>
+    <div className='fixed right-24 text-3xl top-10 dark:text-white'>
        <CiSearch />
     </div>
   )

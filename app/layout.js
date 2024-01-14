@@ -7,6 +7,7 @@ import ThemeButton from '@/components/ThemeButton'
 import DropDownButton from '@/components/DropDownButton'
 import SearchButton from '@/components/SearchButton'
 import NextTopLoader from 'nextjs-toploader';
+import {NextAuthProvider} from './AuthProvider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
    
       <body className={inter.className}>
       <Providers>
+      <NextAuthProvider>
       <NextTopLoader />
       <Header/>
       <SearchButton/>
@@ -27,6 +29,7 @@ export default function RootLayout({ children }) {
     <DropDownButton/>
       {children}
       <Footer/>
+      </NextAuthProvider>
     </Providers>
       </body>
 

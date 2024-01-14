@@ -15,8 +15,11 @@ import logoimg from "../resources/logoimg.png";
 import { VscTerminal } from "react-icons/vsc";
 import { usePathname } from 'next/navigation';
 import clsx from "clsx";
+import { useSession } from "next-auth/react";
+import AuthButton from "./AuthButton";
 const Header = () => {
-  
+  const {data:session ,status} = useSession()
+  // console.log(session)
   const currentRoute = usePathname();
   return (
     <>
@@ -52,6 +55,7 @@ const Header = () => {
                     className="rounded-full"
                   />
 
+
                   <h3 className="text-base font-semibold mt-2 ml-2">
                     Dipak Khade
                   </h3>
@@ -67,14 +71,15 @@ const Header = () => {
                 </div>
 
                 <div className="mt-8 p-2 ">
+                  
                   <ul>
-                    <h3 className="text-gray-700 font-bold mb-4">BLOG MENU</h3>
+                    <h3 className="text-gray-700 font-bold mb-4 mt-3">BLOG MENU</h3>
 <Link href={'/'}>
                     <li className={clsx(
                  {
                   "p-5 rounded-md font-semibold cursor-pointer hover:text-sky-500":true,
 
-                  'text-slate-50 dark:text-gray-400':currentRoute==='/'
+                  'text-black dark:text-gray-400':currentRoute==='/'
                  }
                
                 )}>
@@ -105,8 +110,9 @@ const Header = () => {
                     </li>
                   </ul>
                 </div>
+                <AuthButton/>
 
-                <h4>BLOG SOCIALS</h4>
+                <h4 className="mt-4"> BLOG SOCIALS</h4>
                 <ul className="flex mt-4 dark:text-zinc-900  space-x-1 items-center md:mt-0 lg:mb-6 text-sm font-medium text-gray-500  sm:mb-0 "
              >
         <div>|</div>
@@ -142,6 +148,24 @@ const Header = () => {
           </div>
 
         </div>
+     
+            <div className="ml-10 mt-8  flex">
+            {
+        status=='authenticated'?
+        <div className="flex m-1">
+<Image
+  src={session?.user?.image}
+  width={50}
+  height={50}
+  alt="img"
+  className="rounded-full m-1"
+/>
+         <h5 className=" dark:text-sky-500 mt-4">{session?.user?.name}</h5>
+         </div>
+         :''
+      }
+           <div className="mt-3 ml-2"> <AuthButton/></div>
+            </div>
        
       </div>
         
@@ -228,7 +252,21 @@ const Header = () => {
 
 
          <div className="md:pl-32">
-          <button className="rounded-full border-2 border-cyan-500 px-6 py-1 text-cyan-600 transition-colors hover:bg-cyan-500 hover:text-white">Login</button>
+      {
+        status=='authenticated'?
+        <div className="flex m-1">
+<Image
+  src={session?.user?.image}
+  width={50}
+  height={50}
+  alt="img"
+  className="rounded-full"
+/>
+         <h5 className="m-2 dark:text-sky-500">{session?.user?.name}</h5>
+         </div>
+         :''
+      }
+          <AuthButton/>
         </div>
           </div>
 
