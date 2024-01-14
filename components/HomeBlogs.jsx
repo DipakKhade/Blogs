@@ -22,13 +22,13 @@ const HomeBlogs = () => {
 
           {/* Content */}
           <div className="mx-auto max-w-screen-lg space-y-12 rounded-b-lg bg-white px-8 pt-10 pb-20 font-serif text-lg tracking-wide text-gray-700 sm:shadow-lg dark:bg-zinc-700 dark:text-zinc-50">
-            <h2 className="text-2xl font-semibold">What's New in Next.js 14?</h2>
+            <h2 className="text-2xl font-semibold">What&apos;s New in Next.js 14?</h2>
             <blockquote className="max-w-lg border-l-4 px-4">
               Explore the latest features and enhancements that come with Next.js 14, the popular React framework for building web applications.
               <span className="whitespace-nowrap text-sm">— Next.js Team</span>
             </blockquote>
-            <p>Next.js 14 brings a slew of exciting features and improvements, making it easier than ever to build powerful and performant web applications. In this post, we'll take a closer look at some of the standout additions to the framework.</p>
-            <p>Let's dive in and discover the advancements that Next.js 14 has to offer.</p>
+            <p>Next.js 14 brings a slew of exciting features and improvements, making it easier than ever to build powerful and performant web applications. In this post, we&apos;ll take a closer look at some of the standout additions to the framework.</p>
+            <p>Let&apos;s dive in and discover the advancements that Next.js 14 has to offer.</p>
             {/* More content goes here */}
           </div>
         </article>
@@ -72,7 +72,7 @@ const HomeBlogs = () => {
         </h2>
 
         <p className="text-gray-500">
-          NextAuth.js is a powerful authentication library designed for Next.js, providing a seamless and secure way to implement authentication in your web applications. In this article, we'll delve into the features and benefits of NextAuth.js and how it simplifies the authentication process.
+          NextAuth.js is a powerful authentication library designed for Next.js, providing a seamless and secure way to implement authentication in your web applications. In this article, we&apos;ll delve into the features and benefits of NextAuth.js and how it simplifies the authentication process.
         </p>
 
         <div>
