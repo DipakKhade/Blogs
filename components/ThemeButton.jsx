@@ -10,12 +10,13 @@ const ThemeButton = () => {
   return (
    <>
    
-  <div className='fixed top-10 right-6 md:right-32 pr-6 text-3xl'>  <button onClick={()=>setTheme(theme==='dark'?'light':'dark')}>
-      {theme=='dark'? <CiLight className='dark:text-white '/>:<CiDark className='dark:text-white'/>}
+  <div className='fixed top-10 right-6 md:z-50 md:right-32 pr-6 text-3xl -z-10'>  <button onClick={()=>setTheme(theme==='dark'?'light':'dark')}>
+      {theme=='dark'? <CiLight/>:<CiDark/>}
     </button></div>
    </>
   )
 }
 
 
-export default dynamic(() => Promise.resolve(ThemeButton), { ssr: false });
+// export default dynamic(() => Promise.resolve(ThemeButton), { ssr: false });
+export default ThemeButton;

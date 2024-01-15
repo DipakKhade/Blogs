@@ -6,12 +6,12 @@ import { TbBrandNextjs } from "react-icons/tb";
 const Footer = () => {
   return (
     <>
-        <footer className="p-4 bg-blue-100 md:p-8 lg:p-10 dark:bg-gray-800 bottom-0 w-full">
+        <footer className="p-4 bg-purple-300 md:p-8 lg:p-10 dark:bg-gray-800 bottom-0 w-full">
   <div className="mx-auto text-cente">
       
       
-        <p className='dark:text-sky-700'>&copy; 2024 - Developed by Dipak Khade. All right reserved.</p>
-      <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-sky-500">
+        <p className='dark:text-purple-700'>&copy; 2024 - Developed by Dipak Khade. All right reserved.</p>
+      <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-purple-500">
           <li>
               <Link href={'/'} className="mr-4 hover:underline md:mr-6 ">About</Link>
           </li>
