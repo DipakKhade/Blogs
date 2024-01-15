@@ -8,7 +8,7 @@ import Link from 'next/link'
 import clsx from "clsx";
 
 import { usePathname } from "next/navigation";
-const page = () => {
+const Page = () => {
   
   const currentRoute = usePathname();
   // console.log(currentRoute.slice(0,7))
@@ -103,4 +103,4 @@ id or slug can be any unique associated with data that we want to render
   )
 }
 
-export default page
+export default Page;

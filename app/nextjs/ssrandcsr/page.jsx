@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import React from 'react'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation';
-const page = () => {
+const Page = () => {
     const currentRoute = usePathname();
   const routelink=[
     
@@ -69,4 +69,4 @@ When the server sends JavaScript to the browser, search engines aren’t able to
   )
 }
 
-export default page
+export default Page;
