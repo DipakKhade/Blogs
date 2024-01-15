@@ -5,7 +5,8 @@ const authOptions={
     providers:[
         GithubProvider({
             clientId:process.env.GITHUB_CLIENT_ID,
-            clientSecret:process.env.GITHUB_CLIENT_SECRET 
+            clientSecret:process.env.GITHUB_CLIENT_SECRET ,
+            redirectUri: "https://dipak-khade-blogs.vercel.app/auth/callback",
         })
     ],
     secret: process.env.NEXTAUTH_SECRET || "thisisasecretekeyfornextauth",
