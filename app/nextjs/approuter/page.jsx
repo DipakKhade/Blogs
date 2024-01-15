@@ -12,6 +12,7 @@ const page = () => {
   
   const currentRoute = usePathname();
   // console.log(currentRoute.slice(0,7))
+  //
   const routelink=[
     
     'App router',
