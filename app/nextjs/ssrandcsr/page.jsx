@@ -61,7 +61,7 @@ alt=''
     />
     <p className='p-6'>With CSR, we solved the problem of round trips, achieving faster and more responsive page transitions. But we also introduced a new problem for ourselves.
 
-When the server sends JavaScript to the browser, search engines aren’t able to index the site properly because the actual HTML of the site is not fully formed yet. The browser will have to first download and execute the JavaScript from the server and then hydrate the page to form the complete markup of the site.</p>
+When the server sends JavaScript to the browser, search engines aren&quot;t able to index the site properly because the actual HTML of the site is not fully formed yet. The browser will have to first download and execute the JavaScript from the server and then hydrate the page to form the complete markup of the site.</p>
 </div>
     </>
 
