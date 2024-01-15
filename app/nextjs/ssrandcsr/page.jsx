@@ -33,7 +33,7 @@ const Page = () => {
         </ul>
       </nav>
       <div>
-        <p className='p-6'>In Next js Every Component is Server Component by default . to make it Client Component we have to add "use client" at the top</p>
+        <p className='p-6'>In Next js Every Component is Server Component by default . to make it Client Component we have to add &quot;use client&quot; at the top</p>
       </div>
       <h2 className='text-purple-500 text-2xl font-bold'>Partial Pre-rendering and SSR</h2>
       <p className='p-6'>Pre-rendering is the practice of creating a web page HTML before a user requests it, either during the build or deployment time. Next.js offers two pre-rendering options for optimal speed: Static Generation and Server-side rendering (SSR). 
