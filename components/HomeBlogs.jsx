@@ -13,13 +13,13 @@ import logoimg from "../resources/logoimg.png";
 
 const HomeBlogs = () => {
   return (
-    <div className='dark:bg-zinc-900 mt-24 md:mt-52'>
+    <div className='dark:bg-zinc-900 mt-24 md:mt-52 z-0'>
       
 
       <main>
         <article>
           <header className="mx-auto max-w-screen-lg rounded-t-lg bg-white text-center shadow-lg dark:bg-zinc-700 pt-8">
-          <h1 className='text-2xl p-2 text-purple-600 font-extrabold'>&lt; Diapk Khade / &gt;</h1>
+          <h1 className='text-2xl p-2 text-purple-600 font-extrabold'>&lt; Dipak Khade / &gt;</h1>
             <p className="text-gray-500">Published Jan 14, 2024</p>
             <h1 className="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl">Exploring Next.js 14 Features</h1>
             <p className="mt-6 text-lg text-gray-700 dark:text-zinc-50">Discover the latest enhancements and improvements in Next.js 14</p>
@@ -39,8 +39,12 @@ const HomeBlogs = () => {
             </blockquote>
             <p>Next.js 14 brings a slew of exciting features and improvements, making it easier than ever to build powerful and performant web applications. In this post, we&apos;ll take a closer look at some of the standout additions to the framework.</p>
             <p>Let&apos;s dive in and discover the advancements that Next.js 14 has to offer.</p>
+
             {/* More content goes here */}
+
           </div>
+
+          
         </article>
       </main>
 
@@ -50,7 +54,7 @@ const HomeBlogs = () => {
   <div className="h-0.5 w-2 bg-gray-600"></div>
 </div>
 
-<aside aria-label="Recent Posts" className="mx-auto mt-10 max-w-screen-xl py-20">
+{/* <aside aria-label="Recent Posts" className="mx-auto mt-10 max-w-screen-xl py-20">
   <div className="mx-auto max-w-screen-xl px-4 md:px-8">
    
     <div className="mb-10 md:mb-16">
@@ -198,7 +202,7 @@ const HomeBlogs = () => {
     </article>
     </div>
   </div>
-</aside>
+</aside> */}
   
   <div className="flex flex-row mx-auto p-4">
   <Link href={'/'}>

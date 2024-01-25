@@ -6,7 +6,7 @@ const DropDownButton = () => {
   return (
     <div className="dropdown dropdown-end fixed right-1 md:right-10 text-3xl top-10 -z-10  md:z-50">
     <div tabIndex={0} role="button"> <IoIosArrowDown /></div>
-    <div tabIndex={0} className="dropdown-content z-10 bg-slate-300 menu p-2 shadow rounded-box w-56 md:w-72 mt-4 ">
+    <div tabIndex={0} className="dropdown-content bg-slate-300 z-500 menu p-2 shadow rounded-box w-56 md:w-72 mt-4 ">
     <div className='flex p-4 dark:text-gray-800'>
                   <Image
                     src={profimg}

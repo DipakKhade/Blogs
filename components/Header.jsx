@@ -22,6 +22,7 @@ const Header = () => {
   // console.log(session)
   const currentRoute = usePathname();
   // console.log(currentRoute.slice(0,7))
+
   return (
     <>
       {/* //hamburger for md screens */}
@@ -36,7 +37,7 @@ const Header = () => {
                 htmlFor="my-drawer"
                 className=" cursor-pointer drawer-button bg-white text-black border-none hover:bg-slate-500"
               >
-                <GiHamburgerMenu className="text-2xl dark:text-white fixed top-10" />
+                <GiHamburgerMenu className="text-2xl fixed top-10" />
               </label>
             </div>
             <div className="drawer-side">
@@ -45,7 +46,7 @@ const Header = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <div className="menu p-4 w-96 min-h-full bg-base-200 dark:bg-zinc-900 text-gray-400 z-50">
+              <div className="menu p-4i min-h-full bg-base-200 dark:bg-zinc-900 text-gray-400 z-50">
                 {/* Sidebar content here */}
 
                 <div className="h-20 flex ">
@@ -110,7 +111,7 @@ const Header = () => {
                  {
                   "p-5 rounded-md font-semibold cursor-pointer hover:text-purple-500":true,
 
-                  'text-slate-50 dark:text-gray-400':currentRoute==='/webrtc'
+                  'text-purple-500 dark:text-gray-400':currentRoute==='/webrtc'
                  }
                
                 )}>
@@ -131,7 +132,7 @@ const Header = () => {
                 <AuthButton/>
 
                 <h4 className="mt-4"> BLOG SOCIALS</h4>
-                <ul className="flex mt-4 dark:text-zinc-900  space-x-1 items-center md:mt-0 lg:mb-6 text-sm font-medium text-gray-500  sm:mb-0 "
+                <ul className="flex mt-4 dark:text-zinc-900"
              >
         <div>|</div>
             
@@ -180,12 +181,13 @@ const Header = () => {
           <div className="flex">
             <div>
               {" "}
-              <Image
+              {/* <Image
                 src={logoimg}
                 width={200}
                 alt="logo"
                 className="mix-blend-multiply bg-purple-400"
-              />
+              /> */}
+              <h1 className='text-2xl p-2 text-purple-600 font-extrabold'>&lt; Dipak Khade / &gt;</h1>
               <div>
           <ul className="flex mt-4 dark:text-Zinc-900  space-x-5 items-center md:mt-0 lg:mb-6 text-sm font-medium text-gray-500  sm:mb-0 "
              >

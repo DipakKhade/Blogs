@@ -10,7 +10,7 @@ const ThemeButton = () => {
   return (
    <>
    
-  <div className='fixed top-10 right-6 md:z-50 md:right-32 pr-6 text-3xl -z-10'>  <button onClick={()=>setTheme(theme==='dark'?'light':'dark')}>
+  <div className='fixed top-10 right-6 md:z-50 md:right-32 pr-6 text-3xl -z-10 dark:text-white'>  <button onClick={()=>setTheme(theme==='dark'?'light':'dark')}>
       {theme=='dark'? <CiLight/>:<CiDark/>}
     </button></div>
    </>

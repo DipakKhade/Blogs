@@ -36,7 +36,7 @@ const page = () => {
               To create a Next.js app, open your terminal, cd into the directory
               you like to create the app in, and run the following command:
             </p>
-            <div className="mockup-code bg-slate-950 md:w-[80vw] rounded-md">
+            <div className="mockup-code bg-slate-950 md:w-[80vw] rounded-md -z-10">
               <pre data-prefix="~">
                 <code>npx create-next-app@latest dipakkhadeblog</code>
               </pre>
@@ -85,7 +85,7 @@ const page = () => {
     </button>
 </Link>
 <Link href={'/nextjs/approuter'}>
-    <button type="button" className="bg-gray-800 text-white rounded-r-md py-2 border-l border-gray-200 hover:bg-purple-700 hover:text-white px-3 md:ml-[70vw] ml-28">
+    <button type="button" className="bg-gray-800 text-white rounded-r-md py-2 border-l border-gray-200 hover:bg-purple-700 hover:text-white px-3 md:ml-[70vw] ml-20">
       <div className="flex flex-row align-middle">
         <span className="mr-2">Next</span>
         <svg className="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
