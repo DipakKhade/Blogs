@@ -3,6 +3,9 @@ export default function WebRTCBlog() {
     <div className="bg-gray-100 min-h-screen flex justify-center items-center dark:bg-zinc-900 dark:text-white">
       <div className="max-w-4xl p-8 rounded-lg shadow-md">
         <h1 className="text-4xl font-bold mb-6 text-center text-purple-400">Understanding WebRTC: Revolutionizing Real-time Communication</h1>
+        <span className="mb-5 inline-block rounded bg-purple-500 px-4 py-1 text-center text-xs font-semibold leading-loose text-white">
+                  27 Jan 2024
+                </span>
         <p className="text-lg mb-4">
           WebRTC (Web Real-time Communication) is an industry effort to enhance the web browsing model. It allows browsers to directly exchange real-time media with other browsers in a peer-to-peer fashion through secure access to input peripherals like webcams and microphones.
         </p>
