@@ -12,7 +12,7 @@ export default function WebRTCBlog() {
           Traditional web architecture is based on the client-server paradigm, where a client sends an HTTP request to a server and gets a response containing the information requested. In contrast, WebRTC allows the exchange of data among N peers. In this exchange, peers talk to each other without a server in the middle.
         </p>
         <p className="text-lg mb-4">
-          WebRTC comes built-in with HTML 5, so you don’t need a third-party software or plug-in to use it, and you can access it in your browser through the WebRTC API.
+          WebRTC comes built-in with HTML 5, so you dont need a third-party software or plug-in to use it, and you can access it in your browser through the WebRTC API.
         </p>
         <h2 className="text-2xl font-semibold mb-2">WebRTC Use Cases</h2>
         <p className="text-lg mb-4">
