@@ -52,6 +52,7 @@ const HomeBlogs = () => {
   CardTitle="WebRTC: Real-Time Communication on the Web"
   CardDescription="Explore the capabilities of WebRTC and learn how it enables real-time communication directly in web browsers."
   image="https://webrtcclient.com/wp-content/uploads/2021/09/WebRTC-740-fi.png"
+  blogref={'/webrtc'}
   />
   
 {/* // Next.js Card */}
