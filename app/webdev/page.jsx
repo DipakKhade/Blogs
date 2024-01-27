@@ -65,11 +65,11 @@ const page = () => {
             <ul>
               <li>
                 <code>&amp;lt;</code> or <code>&amp;#60;</code> for the
-                less-than sign{" "}
+                less-than sign
               </li>
               <li>
                 <code>&amp;gt;</code> or <code>&amp;#62;</code> for the
-                greater-than sign{" "}
+                greater-than sign
               </li>
             </ul>
             <p>
@@ -142,12 +142,12 @@ const page = () => {
           <h2>Example of HTML Tag with Attributes:</h2>
           <p>Let&apos;s take a look at an example of an HTML tag with attributes:</p>
           <pre>
-            <code>&lt;img src="image.jpg" alt="Image Description"&gt;</code>
+            <code>&lt;img src=&quotimage.jpg&quot alt=&quotImage Description&quot&gt;</code>
           </pre>
           <p>In this example:</p>
           <ul>
             <li>
-              <code>src</code> specifies the image file's source.
+              <code>src</code> specifies the image files source.
             </li>
             <li>
               <code>alt</code> provides alternative text for the image.
