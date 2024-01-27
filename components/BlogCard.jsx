@@ -3,10 +3,10 @@ import Link from "next/link";
 const BlogCard = ({ image, date, CardTitle, CardDescription ,blogref}) => {
     return (
       <>
-        <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+        <div className="w-full px-4 md:w-1/2 lg:w-1/3 ">
         <Link href={blogref || '/'}>
-          <div className="mb-10 w-full">
-            <div className="mb-8 overflow-hidden rounded">
+          <div className="mb-10 w-full border border-purple-400 p-2 rounded-md">
+            <div className="mb-8 overflow-hidden rounded ">
               <img src={image} alt="" className="w-full" />
             </div>
             <div>
