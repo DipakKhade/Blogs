@@ -16,12 +16,12 @@ const page = () => {
   
   return (
     <>
-      <div className="p-8 mt-12 md:mt-56">
+      <div className="p-8 dark:bg-zinc-900 dark:text-white">
       <nav>
         <ul className="flex p-4 space-x-4 text-xl font-bold text-purple-500 flex-wrap">
-        <li className='ml-6 p-2 rounded-md text-purple-500 font-semibold cursor-pointer hover:underline'>Project Setup</li>
+        <li className='ml-6 p-2 rounded-md text-purple-500 dark:text-white font-semibold cursor-pointer hover:underline'>Project Setup</li>
          {routelink.map((i,index)=>(
-          <Link key={index}  href={`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`}><li className="ml-6 p-2 rounded-md text-gray-800 font-semibold cursor-pointer hover:underline"
+          <Link key={index}  href={`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`}><li className="ml-6 p-2 rounded-md  font-semibold cursor-pointer hover:underline"
                 >{i}</li></Link>
          ))}
          
@@ -36,9 +36,9 @@ const page = () => {
               To create a Next.js app, open your terminal, cd into the directory
               you like to create the app in, and run the following command:
             </p>
-            <div className="mockup-code bg-slate-950 md:w-[80vw] rounded-md -z-10">
+            <div className=" bg-slate-950 p-2 text-slate-200 h-12 rounded-md md:w-[80vw]">
               <pre data-prefix="~">
-                <code>npx create-next-app@latest dipakkhadeblog</code>
+                <code>npx create-next-app@latest</code>
               </pre>
             </div>
             <h4>cd into the dir</h4>
@@ -73,7 +73,7 @@ const page = () => {
       </div>
 
     
-  <div className="flex flex-row mx-auto p-4">
+  <div className="flex flex-row mx-auto p-4 dark:bg-zinc-900">
   <Link href={'/'}>
     <button type="button" className="bg-gray-800 text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-purple-700 hover:text-white px-3 md:ml-[8vw] ml-4">
       <div className="flex flex-row align-middle">

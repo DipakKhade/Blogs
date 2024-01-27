@@ -13,7 +13,7 @@ const Page = () => {
   ]
   return (
     <>
-    <div className='md:mt-56 p-4 font-medium mt-16'>
+    <div className=' p-4 font-medium dark:bg-zinc-900 dark:text-white'>
     <nav>
         <ul className="flex p-4 space-x-4 text-xl font-bold text-purple-500 flex-wrap">
         <ul className="md:p-4 md:space-x-4 text-xl font-bold text-purple-500 md:flex">
@@ -21,7 +21,7 @@ const Page = () => {
         {routelink.map((i,index)=>(
           <Link key={index}  href={`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`}><li className={clsx(
                  {
-                  "ml-6 p-2 rounded-md text-gray-800 font-semibold cursor-pointer hover:underline":true,
+                  "ml-6 p-2 rounded-md font-semibold cursor-pointer dark:text-white hover:underline":true,
 
                   'text-purple-500 dark:text-purple-600':currentRoute===`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`
                  }
@@ -48,7 +48,7 @@ height={500}
 alt=''
     />
     </div>
-<div className='p-4'>
+<div className='p-4 dark:bg-zinc-900 dark:text-white'>
     <h2 className='text-purple-500 text-2xl font-bold'>Client Side Rendering</h2>
     <p className='p-6'>Instead of sending a new request to the server every time a user navigation happens, what if we made the client handle that navigation?
 

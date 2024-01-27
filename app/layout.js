@@ -25,12 +25,12 @@ export default function RootLayout({ children }) {
       <NextAuthProvider>
       <NextTopLoader color="#A020F0"/>
       <Header/>
-      <div className='-z-50'>
+      {/* <div className='-z-50'>
      <div className='md:hidden fixed top-10 left-[28vw] -z-10'> <AuthButton/></div>
      <SearchButton/>
     <ThemeButton/>
     <DropDownButton/>
-    </div>
+    </div> */}
       {children}
       <Footer/>
       </NextAuthProvider>

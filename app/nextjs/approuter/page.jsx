@@ -34,7 +34,7 @@ const Page = () => {
     export default Page;
   `;
   return (
-    <div className='p-4 mt-16 md:mt-48'>
+    <div className='p-4 dark:bg-zinc-900 dark:text-white'>
       <nav>
         <ul className="flex p-4 space-x-4 text-xl font-bold text-purple-500 flex-wrap">
         <ul className="md:p-4 md:space-x-4 text-xl font-bold text-purple-500 md:flex">
@@ -42,7 +42,7 @@ const Page = () => {
         {routelink.map((i,index)=>(
           <Link key={index}  href={`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`}><li className={clsx(
                  {
-                  "ml-6 p-2 rounded-md text-gray-800 font-semibold cursor-pointer hover:underline":true,
+                  "ml-6 p-2 rounded-md dark:text-whitefont-semibold cursor-pointer hover:underline":true,
 
                   'text-purple-500 dark:text-purple-600':currentRoute===`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`
                  }

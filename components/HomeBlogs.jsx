@@ -1,51 +1,39 @@
 
 import React, { lazy } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from 'react-icons/fa';
-
-import { VscTerminal } from "react-icons/vsc";
-import logoimg from "../resources/logoimg.png";
-
+import dynamic from "next/dynamic";
+import BlogCard from './BlogCard'
 
 const HomeBlogs = () => {
   return (
-    <div className='dark:bg-zinc-900 mt-24 md:mt-52 z-0'>
+    <div className='dark:bg-zinc-900 z-0'>
       
 
       <main>
+    
+
         <article>
-          <header className="mx-auto max-w-screen-lg rounded-t-lg bg-white text-center shadow-lg dark:bg-zinc-700 pt-8">
-          <h1 className='text-2xl p-2 text-purple-600 font-extrabold'>&lt; Dipak Khade / &gt;</h1>
-            <p className="text-gray-500">Published Jan 14, 2024</p>
-            <h1 className="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl">Exploring Next.js 14 Features</h1>
-            <p className="mt-6 text-lg text-gray-700 dark:text-zinc-50">Discover the latest enhancements and improvements in Next.js 14</p>
-            <div className="mt-6 flex flex-wrap justify-center gap-2">
-              <button className="rounded-lg bg-gray-100 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">React</button>
-              <button className="rounded-lg bg-gray-100 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">Next.js</button>
-              <button className="rounded-lg bg-gray-100 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">Web Development</button>
-            </div>
-          </header>
+  <header className="mx-auto max-w-screen-lg rounded-t-lg bg-white text-center shadow-lg dark:bg-zinc-700 pt-8">
+    <h1 className='text-2xl p-2 font-extrabold'>&lt; Dipak Khade/ &gt;</h1>
+   
+    <h1 className="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl">Exploring the World of Code and Tech</h1>
+    <p className="mt-6 text-lg text-gray-700 dark:text-zinc-50">Discover the latest trends, insights, web development, and other tech topics.</p>
+   
+  </header>
 
-          {/* Content */}
-          <div className="mx-auto max-w-screen-lg space-y-12 rounded-b-lg bg-white px-8 pt-10 pb-20 font-serif text-lg tracking-wide text-gray-700 sm:shadow-lg dark:bg-zinc-700 dark:text-zinc-50">
-            <h2 className="text-2xl font-semibold">What&apos;s New in Next.js 14?</h2>
-            <blockquote className="max-w-lg border-l-4 px-4">
-              Explore the latest features and enhancements that come with Next.js 14, the popular React framework for building web applications.
-              <span className="whitespace-nowrap text-sm">— Next.js Team</span>
-            </blockquote>
-            <p>Next.js 14 brings a slew of exciting features and improvements, making it easier than ever to build powerful and performant web applications. In this post, we&apos;ll take a closer look at some of the standout additions to the framework.</p>
-            <p>Let&apos;s dive in and discover the advancements that Next.js 14 has to offer.</p>
+  {/* Content */}
+  <div className="mx-auto max-w-screen-lg space-y-12 rounded-b-lg bg-white px-8 pt-10 pb-20 font-serif text-lg tracking-wide text-gray-700 sm:shadow-lg dark:bg-zinc-700 dark:text-zinc-50">
+    <h2 className="text-2xl font-semibold">Welcome to Your Weekend Tech Blog!</h2>
+    <blockquote className="max-w-lg border-l-4 px-4">
+      Dive into the fascinating world of technology with our weekly blog posts covering coding, web development, and more!
+      <span className="whitespace-nowrap text-sm">— Your Blog Team</span>
+    </blockquote>
+    <p>Every weekend, we bring you fresh insights, tutorials, and news about the ever-evolving landscape of technology. Whether you're a seasoned developer or just starting your coding journey, there's something for everyone here.</p>
+    <p>Stay tuned for our upcoming posts where we'll explore the latest tools, frameworks, and best practices in the world of code and web development.</p>
+    {/* Add more introductory content about your blog */}
+  </div>
+</article>
 
-            {/* More content goes here */}
-
-          </div>
-
-          
-        </article>
       </main>
 
 <div className="w-fit mx-auto mt-10 flex space-x-2">
@@ -54,229 +42,90 @@ const HomeBlogs = () => {
   <div className="h-0.5 w-2 bg-gray-600"></div>
 </div>
 
-{/* <aside aria-label="Recent Posts" className="mx-auto mt-10 max-w-screen-xl py-20">
-  <div className="mx-auto max-w-screen-xl px-4 md:px-8">
-   
-    <div className="mb-10 md:mb-16">
-      <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Most Recent Posts</h2>
-      <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Navigating the Digital Realm with Insights into Web Development and the Latest Tech Trends.</p>
-    </div>
-   
-    <div className="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16">
-     
-    <article className="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-      <Link href={'/next-auth'} className="group shrink-0 relative block h-56 w-full self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
-        <Image
-          src="https://repository-images.githubusercontent.com/119162419/3e7988a9-4746-4688-a380-738608be0530"
-      quality={100}
-          alt=""
-          width={150}
-          height={100}
-          className="group-hover:scale-110 absolute inset-0 h-full w-full  transition duration-200"
-        />
-      </Link>
 
-      <div className="flex flex-col gap-2">
-        <span className="text-sm text-gray-400">December 18, 2023</span>
 
-        <h2 className="text-xl font-bold text-gray-800">
-          <Link href={'/next-auth'} className="text-purple-600 transition duration-100 hover:text-purple-500">
-            Exploring NextAuth.js for Secure Authentication
-          </Link>
-        </h2>
-
-        <p className="text-gray-500">
-          NextAuth.js is a powerful authentication library designed for Next.js, providing a seamless and secure way to implement authentication in your web applications. In this article, we&apos;ll delve into the features and benefits of NextAuth.js and how it simplifies the authentication process.
-        </p>
-
-        <div>
-          <Link href={'/next-auth'} className="text-purple-700 font-semibold  transition duration-100 hover:text-purple-600">
-            Read more
-          </Link>
-        </div>
-      </div>
-    </article>
-     
-    <article className="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-      <Link href={'/docker-intro'} className="group shrink-0 relative block h-56 w-full self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
-      <Image
-          src="https://avatars.githubusercontent.com/u/5429470?s=280&v=4"
-      quality={100}
-          alt=""
-          width={100}
-          height={100}
-          className="group-hover:scale-110 absolute inset-0 h-full w-full  transition duration-200"
-        />
-      </Link>
-    
-
-      <div className="flex flex-col gap-2">
-        <span className="text-sm text-gray-400">December 18, 2023</span>
-
-        <h2 className="text-xl font-bold text-gray-800">
-          <Link href={'/docker-intro'} className="text-purple-600 transition duration-100 hover:text-purple-500">
-            Demystifying Docker: A Deep Dive into Containerization
-          </Link>
-        </h2>
-
-        <p className="text-gray-500">
-          Discover the transformative world of Docker and containerization, unraveling the complexities of deployment, scalability, and seamless software development.
-        </p>
-
-        <div>
-          <Link href={'/docker-intro'} className="text-purple-700 font-semibold transition duration-100 hover:text-purple-600">
-            Read more
-          </Link>
-        </div>
-      </div>
-    </article>
-      
-     
-    <article className="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-      <Link href={'/express-guide'} className="group shrink-0 relative block h-56 w-full self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
-      <Image
-          src="https://blog.logrocket.com/wp-content/uploads/2020/12/express-middlewares-complete-guide.png"
-      quality={100}
-          alt=""
-          width={100}
-          height={100}
-          className="group-hover:scale-110 absolute inset-0 h-full w-full  transition duration-200"
-        />
-      </Link>
+<div className='p-4 md:p-16'>
   
 
-      <div className="flex flex-col gap-2">
-        <span className="text-sm text-gray-400">December 18, 2023</span>
-
-        <h2 className="text-xl font-bold text-gray-800">
-          <Link href={'/express-guide'} className="text-purple-600 transition duration-100 hover:text-purple-500">
-            Mastering Express.js: A Comprehensive Guide to Building Web Applications
-          </Link>
-        </h2>
-
-        <p className="text-gray-500">
-          Dive into the world of Express.js and learn how to build robust and scalable web applications using this powerful Node.js framework.
-        </p>
-
-        <div>
-          <Link href={'/express-guide'} className="text-purple-700 font-semibold transition duration-100 hover:text-purple-600">
-            Read more
-          </Link>
-        </div>
-      </div>
-    </article>
-      
-
-    <article className="flex flex-col items-center gap-4 md:flex-row lg:gap-6">
-      <Link href={'/tailwindcss-intro'} className="group shrink-0 relative block h-56 w-full self-start overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-24 md:w-24 lg:h-40 lg:w-40">
-      <Image
-          src="https://miro.medium.com/v2/resize:fit:512/1*JEHLmWo6_SrpHPiP4AimIw.png"
-      quality={100}
-          alt=""
-          width={100}
-          height={100}
-          className="group-hover:scale-110 absolute inset-0 h-full w-full  transition duration-200"
-        />
-      </Link>
- 
-
-      <div className="flex flex-col gap-2">
-        <span className="text-sm text-gray-400">December 18, 2023</span>
-
-        <h2 className="text-xl font-bold text-gray-800">
-          <Link href={'/tailwindcss-intro'} className="text-purple-600 transition duration-100 hover:text-purple-500">
-            Unleashing Creativity with Tailwind CSS: A Comprehensive Introduction
-          </Link>
-        </h2>
-
-        <p className="text-gray-500">
-          Explore the power of Tailwind CSS and learn how to streamline your web development workflow with its utility-first approach and customizable design system.
-        </p>
-
-        <div>
-          <Link href={'/tailwindcss-intro'} className="text-purple-700 font-semibold transition duration-100 hover:text-purple-600">
-            Read more
-          </Link>
-        </div>
-      </div>
-    </article>
-    </div>
-  </div>
-</aside> */}
-  
-  <div className="flex flex-row mx-auto p-4">
-  <Link href={'/'}>
-    <button type="button" className="bg-gray-800 text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-purple-700 hover:text-white px-3 md:ml-[8vw] ml-4">
-      <div className="flex flex-row align-middle">
-        <svg className="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fillRule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd"></path>
-        </svg>
-        <p className="ml-2">Prev</p>
-      </div>
-    </button>
-</Link>
-<Link href={'/nextjs/approuter'}>
-    <button type="button" className="bg-gray-800 text-white rounded-r-md py-2 border-l border-gray-200 hover:bg-purple-700 hover:text-white px-3 md:ml-[70vw] ml-20">
-      <div className="flex flex-row align-middle">
-        <span className="mr-2">Next</span>
-        <svg className="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-        </svg>
-      </div>
-    </button>
-</Link>
-</div>
-<div className="md:ml-[40vw] ml-12 mb-4">
-          <div className="flex">
-            <div>
-              {" "}
-              <Image
-                src={logoimg}
-                width={200}
-                alt="logo"
-                className="mix-blend-multiply bg-purple-400"
-              />
-              <div>
-          <ul className="flex mt-4 dark:text-Zinc-900  space-x-5 items-center md:mt-0 lg:mb-6 text-sm font-medium text-gray-500  sm:mb-0 "
-             >
-        <div>|</div>
-            
-              
-                <li>
-                    <Link href={'https://github.com/DipakKhade'} target="_blank" ><FaGithub className="text-2xl text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
-                </li>
-
-                <li>
-                <Link href={'https://twitter.com/dipakKhade272'} target="_blank"><FaXTwitter className="text-2xl text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
-                </li>
-
-                <li>
-                <Link href={'https://www.linkedin.com/in/dipak-khade-715389252/'} target="_blank"><FaLinkedin className="text-2xl text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
-                </li>
-
-
-                <li>
-                <Link href={'https://instagram.com/dipakkhade272?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" ><FaInstagram className="text-2xl text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
-                </li>
-                <li>
-                <Link href={'https://protfolio-with-next-js-dfx1.vercel.app/'} target="_blank" ><VscTerminal  className="text-2xl text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
-                </li>
-               
-               
-            </ul>
-          </div>
+<section className="bg-white pb-10 pt-20 dark:bg-zinc-900 lg:pb-20 lg:pt-[120px]">
+        <div className="container">
+          <div className="-mx-4 flex flex-wrap">
+            <div className="w-full px-4">
+              <div className="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
+                <span className="mb-2 block text-lg font-semibold text-primary">
+                  Our Blogs
+                </span>
+                <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                  Our Recent News
+                </h2>
+                <p className="text-base text-body-color dark:text-dark-6">
+                  There are many variations of passages of Lorem Ipsum available
+                  but the majority have suffered alteration in some form.
+                </p>
+              </div>
             </div>
-           
-
-
-           
-        
           </div>
 
+          <div className="-mx-4 flex flex-wrap">
+            
 
+{/* // Next.js Card */}
+<BlogCard
+  date="Jan 5, 2024"
+  CardTitle="Next.js: The React Framework"
+  CardDescription="Next.js is a React framework that enables functionality such as server-side rendering, static site generation, and routing."
+  image="https://images.ctfassets.net/23aumh6u8s0i/6pjUKboBuFLvCKkE3esaFA/5f2101d6d2add5c615db5e98a553fc44/nextjs.jpeg"
+  blogref='/nextjs'
+/>
+{/* 
+// Redis Card */}
+<BlogCard
+  date="Jan 10, 2024"
+  CardTitle="Redis: The In-Memory Data Structure Store"
+  CardDescription="Redis is an open-source, in-memory data structure store used as a database, cache, and message broker."
+  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRx0dQTevYgijMfoT1xqfTFOGZbeP2TZKnitqw14-EocHgm4bDilgPK7w8A_VhNN9f5VM&usqp=CAU"
+/>
+
+{/* // Tailwind CSS Card */}
+<BlogCard
+  date="Jan 15, 2024"
+  CardTitle="Tailwind CSS: A Utility-First CSS Framework"
+  CardDescription="Tailwind CSS is a utility-first CSS framework for creating custom designs without having to leave your HTML."
+  image="https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2021/02/blog-2.jpg"
+/>
+
+{/* // NextAuth Card */}
+<BlogCard
+  date="Jan 20, 2024"
+  CardTitle="NextAuth: Authentication for Next.js"
+  CardDescription="NextAuth is an authentication library for Next.js that supports various authentication providers and strategies."
+  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWl0kEQGxUzfriLR0ZIk6dhFmHzbB5__2Gdg&usqp=CAU"
+/>
+
+{/* webrtc */}
+<BlogCard
+  date="Jan 27, 2024"
+  CardTitle="WebRTC: Real-Time Communication on the Web"
+  CardDescription="Explore the capabilities of WebRTC and learn how it enables real-time communication directly in web browsers."
+  image="https://webrtcclient.com/wp-content/uploads/2021/09/WebRTC-740-fi.png"
+/>
+
+{/* nginx */}
+<BlogCard
+  date="Jan 27, 2024"
+  CardTitle="Mastering Nginx: Optimizing Your Web Server"
+  CardDescription="Unlock the full potential of Nginx and optimize your web server performance with best practices and advanced configurations."
+  image="https://miro.medium.com/v2/resize:fit:1200/0*mjG1YdoT7xPcnznN.jpg"
+/>
+
+
+          </div>
         </div>
+      </section>
+      </div>
+  
+
     </div>
   )
 }
-
-export default HomeBlogs
+export default dynamic (() => Promise.resolve(HomeBlogs), {ssr: false})
