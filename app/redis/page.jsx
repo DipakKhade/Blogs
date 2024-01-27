@@ -42,7 +42,7 @@ export default function RedisTailwindBlog() {
         </p>
         <p className="text-lg  mt-4">
           In this blog post, we ll explore how to integrate Redis with a Next.js application and style it using Tailwind
-          CSS, demonstrating the power and flexibility of Redis in modern web development. Let's dive in!
+          CSS, demonstrating the power and flexibility of Redis in modern web development. Let&apos;s dive in!
         </p>
 
         <section className="not-format p-4">

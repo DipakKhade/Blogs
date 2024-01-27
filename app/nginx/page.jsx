@@ -28,13 +28,13 @@ export default function NGINXBlog() {
             </ul>
           </div>
           <p className="text-lg">
-            NGINX's versatility and performance make it a go-to solution for developers and system administrators alike. Whether you re running a small website or managing a large-scale web application, NGINX offers the tools and features needed to optimize performance, enhance security, and ensure reliability.
+            NGINX&apos;s versatility and performance make it a go-to solution for developers and system administrators alike. Whether you re running a small website or managing a large-scale web application, NGINX offers the tools and features needed to optimize performance, enhance security, and ensure reliability.
           </p>
           <p className="text-lg mt-4">
-            In this comprehensive overview, we ll explore the core features and functionality of NGINX, delve into common use cases and deployment scenarios, and provide practical tips and best practices for configuring NGINX servers. Whether you're new to NGINX or looking to deepen your understanding, this guide will equip you with the knowledge and skills needed to leverage NGINX effectively in your projects.
+            In this comprehensive overview, we ll explore the core features and functionality of NGINX, delve into common use cases and deployment scenarios, and provide practical tips and best practices for configuring NGINX servers. Whether you&apos;re new to NGINX or looking to deepen your understanding, this guide will equip you with the knowledge and skills needed to leverage NGINX effectively in your projects.
           </p>
           <p className="text-lg mt-4">
-            Let's dive into the world of NGINX and uncover the power of this versatile web server and reverse proxy.
+            Let&apos;s dive into the world of NGINX and uncover the power of this versatile web server and reverse proxy.
           </p>
         </div>
       </div>

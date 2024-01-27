@@ -10,13 +10,13 @@ const page = () => {
         <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Understanding How Websites Work</h1>
     </header>
 
-    <p className="lead">Curious about the inner workings of the websites you visit every day? Delve into the fascinating world of web technology with our beginner's guide to understanding how websites function. From client-server communication to rendering HTML, we'll unravel the mysteries behind the scenes.</p>
+    <p className="lead">Curious about the inner workings of the websites you visit every day? Delve into the fascinating world of web technology with our beginner&apos;s guide to understanding how websites function. From client-server communication to rendering HTML, we&apos;ll unravel the mysteries behind the scenes.</p>
 
     <h2>Client-Server Architecture</h2>
     <p>At the heart of the web lies the client-server architecture, where web browsers (clients) communicate with web servers to request and receive web pages. This communication occurs via the Hypertext Transfer Protocol (HTTP), a protocol that governs the transfer of data between clients and servers.</p>
 
     <h2>Request-Response Cycle</h2>
-    <p>When you enter a URL into your browser's address bar and hit enter, a series of events is set in motion. Your browser sends an HTTP request to the corresponding web server, requesting the desired web page. The server processes the request and responds with the requested web page, typically in the form of HTML, CSS, and JavaScript files.</p>
+    <p>When you enter a URL into your browser&apos;s address bar and hit enter, a series of events is set in motion. Your browser sends an HTTP request to the corresponding web server, requesting the desired web page. The server processes the request and responds with the requested web page, typically in the form of HTML, CSS, and JavaScript files.</p>
 
     <h2>Rendering HTML</h2>
     <p>Once the browser receives the HTML file from the server, it begins the process of rendering the web page. This involves parsing the HTML markup, interpreting CSS styles, and executing JavaScript code to create the final visual representation of the webpage.</p>
@@ -25,7 +25,7 @@ const page = () => {
     <p>Many modern websites feature dynamic content generated on the server-side using server-side scripting languages such as PHP, Python, or Node.js. These scripts interact with databases to fetch and manipulate data before rendering it into HTML for the client to consume.</p>
 
     <h2>Conclusion</h2>
-    <p>By understanding the fundamentals of how websites work, you gain insight into the intricate processes that power the web. Whether you're a curious beginner or a seasoned developer, delving into the mechanics behind web technology opens up a world of possibilities for creating and experiencing the web.</p>
+    <p>By understanding the fundamentals of how websites work, you gain insight into the intricate processes that power the web. Whether you&apos;re a curious beginner or a seasoned developer, delving into the mechanics behind web technology opens up a world of possibilities for creating and experiencing the web.</p>
 
     
 </article>
@@ -39,7 +39,7 @@ const page = () => {
             <p className="lead">
               Embarking on your journey into web development? Understanding the
               fundamental concepts is key to building a strong foundation. In
-              this guide, we'll explore the basics of web development, including
+              this guide, we&apos;ll explore the basics of web development, including
               HTML entities, to help you kickstart your coding journey.
             </p>
             <h2>What is Web Development?</h2>
@@ -78,7 +78,7 @@ const page = () => {
             </p>
             <h2>Getting Started with Web Development</h2>
             <p>
-              To get started with web development, you'll need to familiarize
+              To get started with web development, you&apos;ll need to familiarize
               yourself with the core technologies used in web development:
             </p>
             <ul>
@@ -99,7 +99,7 @@ const page = () => {
             </ul>
             <p>
               By mastering these foundational technologies and exploring
-              advanced concepts and frameworks, you'll be well-equipped to build
+              advanced concepts and frameworks, you&apos;ll be well-equipped to build
               dynamic and engaging web experiences.
             </p>
            
@@ -140,7 +140,7 @@ const page = () => {
           </p>
 
           <h2>Example of HTML Tag with Attributes:</h2>
-          <p>Let's take a look at an example of an HTML tag with attributes:</p>
+          <p>Let&apos;s take a look at an example of an HTML tag with attributes:</p>
           <pre>
             <code>&lt;img src="image.jpg" alt="Image Description"&gt;</code>
           </pre>
@@ -158,7 +158,7 @@ const page = () => {
           <p>
             Mastering HTML tags and attributes is essential for any aspiring web
             developer. With a solid understanding of these fundamental concepts,
-            you'll be well-equipped to create captivating and functional web
+            you&apos;ll be well-equipped to create captivating and functional web
             experiences that engage users.
           </p>
 

@@ -21,7 +21,7 @@ const page = () => {
           <ul>
               <li><strong>Utility-First Approach:</strong> Tailwind CSS follows a utility-first approach, which means that styles are applied directly to HTML elements using utility classes like <code>text-center</code>, <code>bg-blue-500</code>, or <code>p-4</code>. This approach offers greater flexibility and control over styling compared to traditional CSS frameworks.</li>
               <li><strong>Responsive Design:</strong> Tailwind CSS includes built-in support for responsive design with a wide range of utility classes for handling breakpoints and viewport sizes. This makes it easy to create layouts that adapt seamlessly to different screen sizes and devices.</li>
-              <li><strong>Customization:</strong> Tailwind CSS is highly customizable, allowing you to configure every aspect of your design, including colors, typography, spacing, and more. You can easily customize your project's design system using Tailwind extensive configuration options.</li>
+              <li><strong>Customization:</strong> Tailwind CSS is highly customizable, allowing you to configure every aspect of your design, including colors, typography, spacing, and more. You can easily customize your project&apos;s design system using Tailwind extensive configuration options.</li>
               <li><strong>Dark Mode Support:</strong> Tailwind CSS provides built-in support for dark mode, making it effortless to create dark-themed interfaces that look great across devices.</li>
           </ul>
           <h2>Getting Started with Tailwind CSS</h2>
