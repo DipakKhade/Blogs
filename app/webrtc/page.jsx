@@ -27,7 +27,7 @@ export default function WebRTCBlog() {
         </ul>
         <h2 className="text-2xl font-semibold mb-2 mt-6">Key Features of WebRTC</h2>
         <p className="text-lg mb-4">
-          WebRTC consists of several interrelated APIs. Let's look closely at some of the key ones: MediaStream, RTCPeerConnection, and RTCDataChannel.
+          WebRTC consists of several interrelated APIs. Lets look closely at some of the key ones: MediaStream, RTCPeerConnection, and RTCDataChannel.
         </p>
         <p className="text-lg mb-4">
           The <strong>MediaStream</strong> interface is designed to let you access streams of media from local input devices like cameras and microphones. It serves as a way to manage actions on a data stream like recording, sending, resizing, and displaying the streams content.
