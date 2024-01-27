@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import Blog from "@/app/models/blogs";
-import connectTomongoDB from "@/libs/mongoDB";
+import connectTomongoDB from "@/libs/mongo/mongoDB";
 
 export async function GET() {
     await connectTomongoDB();
@@ -10,11 +10,11 @@ export async function GET() {
 
 
   export async function POST(req) {
-    const { thunbnail,title,description } = await req.json();
+    const { image, date, CardTitle, CardDescription ,blogref } = await req.json();
   
     await connectTomongoDB();
   
-    await Blog.create({ thunbnail,title,description });
+    await Blog.create({ image, date, CardTitle, CardDescription ,blogref });
   
     return NextResponse.json({ massage: "Blog created" }, { status: 201 });
   }

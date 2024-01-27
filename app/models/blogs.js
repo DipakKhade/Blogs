@@ -3,16 +3,22 @@ import mongoose from "mongoose";
 
 const blogsSchema=new Schema(
     {
-       thumbnail:{
-        type:String,
-       },
-       title:{
-        type:String,
-        require:true
-       },
-       description:{
+      image:{
         type:String
-       }
+
+      },
+      date:{
+        type:String
+      },
+      CardTitle:{
+        type:String
+      },
+      CardDescription:{
+        type:String
+      },
+      blogref:{
+        type:String
+      }
 
     }
     ,

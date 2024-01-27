@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+
 const Content = () => {
   return (
     <div>
@@ -18,9 +19,9 @@ const Content = () => {
      <Link href={'/'}>
      <button className="rounded-lg bg-purple-200 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">DSA</button>
      </Link>
-
+    
     </div>
-
+    
 
     </div>
   )

@@ -1,10 +1,25 @@
-
-import React, { lazy } from 'react'
-import Link from 'next/link'
+'use client';
+import React, { Suspense, useEffect } from 'react'
 import dynamic from "next/dynamic";
 import BlogCard from './BlogCard'
+import { useState } from 'react';
+import Loading from './loading';
 
 const HomeBlogs = () => {
+const [blog, setBlog] = useState()
+ useEffect(() => {
+  ( async()=>{
+    const local='http://localhost:3000/'
+    const domain='https://dipak-khade-blogs.vercel.app/'
+    const data= await fetch(`${domain}/api/blogs`)
+    const responce=await data.json()
+    setBlog(responce)
+    // console.log(responce)
+  })();
+ 
+ }, [])
+ 
+
   return (
     <div className='dark:bg-zinc-900 z-0'>
       
@@ -47,62 +62,23 @@ const HomeBlogs = () => {
             
 
 {/* webrtc */}
-<BlogCard
-  date="Jan 27, 2024"
-  CardTitle="WebRTC: Real-Time Communication on the Web"
-  CardDescription="Explore the capabilities of WebRTC and learn how it enables real-time communication directly in web browsers."
-  image="https://webrtcclient.com/wp-content/uploads/2021/09/WebRTC-740-fi.png"
-  blogref={'/webrtc'}
+
+<Suspense fallback={<Loading/>} >
+
+{ blog &&
+ blog.blogs.map((b)=>(
+  <BlogCard
+  key={b._id}
+  date={b.date}
+  CardTitle={b.CardTitle}
+  CardDescription={b.CardDescription}
+  image={b.image}
+  blogref={b.blogref}
   />
-  
-{/* // Next.js Card */}
-<BlogCard
-  date="Jan 5, 2024"
-  CardTitle="Next.js: The React Framework"
-  CardDescription="Next.js is a React framework that enables functionality such as server-side rendering, static site generation, and routing."
-  image="https://images.ctfassets.net/23aumh6u8s0i/6pjUKboBuFLvCKkE3esaFA/5f2101d6d2add5c615db5e98a553fc44/nextjs.jpeg"
-  blogref='/nextjs'
-/>
-{/* 
-// Redis Card */}
-<BlogCard
-  date="Jan 10, 2024"
-  CardTitle="Redis: The In-Memory Data Structure Store"
-  CardDescription="Redis is an open-source, in-memory data structure store used as a database, cache, and message broker."
-  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRx0dQTevYgijMfoT1xqfTFOGZbeP2TZKnitqw14-EocHgm4bDilgPK7w8A_VhNN9f5VM&usqp=CAU"
-  blogref={'/redis'}
-/>
+ ))
+}
 
-{/* // Tailwind CSS Card */}
-<BlogCard
-  date="Jan 13, 2024"
-  CardTitle="Tailwind CSS: A Utility-First CSS Framework"
-  CardDescription="Tailwind CSS is a utility-first CSS framework for creating custom designs without having to leave your HTML."
-  image="https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2021/02/blog-2.jpg"
-  blogref={'/tailwindcss'}
-/>
-
-{/* // NextAuth Card */}
-<BlogCard
-  date="Dec 8, 2023"
-  CardTitle="NextAuth: Authentication for Next.js"
-  CardDescription="NextAuth is an authentication library for Next.js that supports various authentication providers and strategies."
-  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWl0kEQGxUzfriLR0ZIk6dhFmHzbB5__2Gdg&usqp=CAU"
-  blogref={'/nextauth'}
-/>
-
-
-
-{/* nginx */}
-<BlogCard
-  date="Jan 3, 2024"
-  CardTitle="Mastering Nginx: Optimizing Your Web Server"
-  CardDescription="Unlock the full potential of Nginx and optimize your web server performance with best practices and advanced configurations."
-  image="https://miro.medium.com/v2/resize:fit:1200/0*mjG1YdoT7xPcnznN.jpg"
-  blogref={'/nginx'}
-
-/>
-
+</Suspense>
 
           </div>
         </div>
