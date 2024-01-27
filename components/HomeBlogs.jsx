@@ -28,8 +28,8 @@ const HomeBlogs = () => {
       Dive into the fascinating world of technology with our weekly blog posts covering coding, web development, and more!
       <span className="whitespace-nowrap text-sm">— Your Blog Team</span>
     </blockquote>
-    <p>Every weekend, we bring you fresh insights, tutorials, and news about the ever-evolving landscape of technology. Whether you're a seasoned developer or just starting your coding journey, there's something for everyone here.</p>
-    <p>Stay tuned for our upcoming posts where we'll explore the latest tools, frameworks, and best practices in the world of code and web development.</p>
+    <p>Every weekend, we bring you fresh insights, tutorials, and news about the ever-evolving landscape of technology. Whether you&apos;re a seasoned developer or just starting your coding journey, there&apos;s something for everyone here.</p>
+    <p>Stay tuned for our upcoming posts where we&apos;ll explore the latest tools, frameworks, and best practices in the world of code and web development.</p>
     {/* Add more introductory content about your blog */}
   </div>
 </article>
