@@ -1,7 +1,7 @@
 export default function NGINXBlog() {
     return (
-      <div className="bg-gray-100 min-h-screen flex justify-center items-center dark:bg-zinc-900 dark:text-white">
-        <div className="max-w-4xl p-8 rounded-lg shadow-md">
+      <div className=" min-h-screen flex justify-center items-center dark:bg-zinc-900 dark:text-white">
+        <div className="max-w-4xl p-8 rounded-lg ">
           <h1 className="text-4xl font-bold mb-6 text-center text-purple-400">NGINX: A Comprehensive Overview</h1>
           <p className="text-lg mb-4">
             NGINX, pronounced engine-x, is a high-performance web server and reverse proxy server. It renowned for its speed, scalability, and flexibility, making it a popular choice for serving web content, handling API requests, and load balancing across servers.

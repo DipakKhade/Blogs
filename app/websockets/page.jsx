@@ -125,7 +125,7 @@ server.listen(3001, () => {
       </div>
 
       <div className="md:w-[84vw] md:pl-[15vw] p-2">
-
+<h4 className="p-4 text-2xl font-bold">OutPut :</h4>
       <Video src={websocketvideo} />
       {/* https://next-video.dev/docs#remote-storage-and-optimization */}
       </div>

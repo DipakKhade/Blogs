@@ -4,8 +4,8 @@ export default function RedisTailwindBlog() {
  
   return (
    
-      <div className="bg-gray-100 min-h-screen flex justify-center items-center dark:bg-zinc-900 dark:text-white">
-      <div className="max-w-4xl p-8 rounded-lg shadow-md">
+      <div className=" min-h-screen flex justify-center items-center dark:bg-zinc-900 dark:text-white">
+      <div className="max-w-4xl p-8 rounded-lg">
         <h1 className="text-4xl font-bold mb-6 text-center text-purple-400">Redis: A Primer</h1>
         <p className="text-lg mb-4">
           Redis, which stands for Remote Dictionary Server, is an open-source, in-memory data structure store known for
@@ -48,14 +48,14 @@ export default function RedisTailwindBlog() {
         <section className="not-format p-4">
              
               <form className="mb-6">
-                  <div className="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                  <div className="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-900">
                       <label for="comment" className="sr-only">Your comment</label>
                       <textarea id="comment" rows="6"
-                          className="px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
+                          className="px-0 w-full text-sm text-gray-900 border-0 focus:ring-0 dark:text-white dark:bg-gray-900"
                           placeholder="Write a comment..." required></textarea>
                   </div>
                   <button type="submit"
-                      className="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
+                      className="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white rounded-lg focus:ring-4 focus:ring-primary-200 ">
                       Post comment
                   </button>
               </form>

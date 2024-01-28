@@ -13,7 +13,7 @@ const HomeBlogs = () => {
     (async () => {
       const local = "http://localhost:3000/";
       const domain = "https://dipak-khade-blogs.vercel.app";
-      const data = await fetch(`${domain}/api/blogs`);
+      const data = await fetch(`${local}/api/blogs`);
       const responce = await data.json();
       setBlog(responce);
       setFetched(true);

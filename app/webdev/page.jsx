@@ -1,9 +1,65 @@
 import React from "react";
 
 const page = () => {
+  const code1=`
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tree Example</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>About Us</h2>
+        <p>This is a brief description of our company.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+  `
+
+  const code2=`
+  html
+├── head
+│   └── title
+└── body
+    ├── header
+    │   ├── h1
+    │   └── nav
+    │       └── ul
+    │           ├── li
+    │           │   └── a
+    │           ├── li
+    │           │   └── a
+    │           ├── li
+    │           │   └── a
+    │           └── li
+    │               └── a
+    ├── section
+    │   ├── h2
+    │   └── p
+    └── footer
+        └── p
+
+  `
   return (
     <div>
-      <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-zinc-900 dark:text-white antialiased">
+      <main className="pt-8 pb-16 lg:pt-16 lg:pb-24  dark:bg-zinc-900 dark:text-white antialiased">
         <div className=" justify-between px-4 mx-auto max-w-screen-xl ">
         <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
     <header className="mb-4 lg:mb-6 not-format">
@@ -27,13 +83,36 @@ const page = () => {
     <h2>Conclusion</h2>
     <p>By understanding the fundamentals of how websites work, you gain insight into the intricate processes that power the web. Whether you&apos;re a curious beginner or a seasoned developer, delving into the mechanics behind web technology opens up a world of possibilities for creating and experiencing the web.</p>
 
-    
+    <div>
+      <h3>HTML Tree</h3>
+<p>HTML tree refers to the hierarchical structure of HTML elements on a webpage. It's essentially a representation of how HTML elements are nested within each other.
+
+Here's a simple example of an HTML tree:</p>
+      <div className="bg-slate-950 text-white p-4 rounded-md mockup-code">
+          <pre>
+            <pre data-prefix="$" className="text-green-600">
+              <code>HTML</code>
+            </pre>
+            <code> {code1.trim()}</code>
+          </pre>
+        </div>
+    </div>
+
+    <p>HTML tree structure can be visualized like this:</p>
+
+    <div className="bg-slate-950 text-white p-4 rounded-md mockup-code">
+          <pre>
+           
+            <code> {code2.trim()}</code>
+          </pre>
+        </div>
+        <p>Each element in the HTML tree is nested inside its parent element, forming a hierarchy. This hierarchy is crucial for understanding the structure of a webpage and is used by web browsers to render the content correctly.</p>
 </article>
 
           <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
             <header className="mb-4 lg:mb-6 not-format">
               <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
-                Understanding the Basics of Web Development
+               HTML Entities
               </h1>
             </header>
             <p className="lead">
@@ -141,7 +220,7 @@ const page = () => {
 
           <h2>Example of HTML Tag with Attributes:</h2>
           <p>Let&apos;s take a look at an example of an HTML tag with attributes:</p>
-          <pre>
+          <pre className="bg-black text-white p-2 rounded-sm">
             <code>&lt;img src=&quotimage.jpg&quot alt=&quotImage Description&quot&gt;</code>
           </pre>
           <p>In this example:</p>
