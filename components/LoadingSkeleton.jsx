@@ -35,7 +35,7 @@ const LoadingSkeleton = () => {
     </div>
     <div>
       <span className="mb-5 inline-block rounded bg-purple-500 px-4 py-1 text-center text-xs font-semibold leading-loose text-white"> {/* Placeholder for date */}
-        loading ...
+         ...
       </span>
       <h3>
         <p className="mb-4 inline-block text-xl font-semibold text-gray-400 hover:text-purple-600 dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"> {/* Placeholder for title */}
@@ -53,11 +53,11 @@ const LoadingSkeleton = () => {
     </div>
     <div>
       <span className="mb-5 inline-block rounded bg-purple-500 px-4 py-1 text-center text-xs font-semibold leading-loose text-white"> {/* Placeholder for date */}
-        loading ...
+         ...
       </span>
       <h3>
         <p className="mb-4 inline-block text-xl font-semibold text-gray-400 hover:text-purple-600 dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"> {/* Placeholder for title */}
-          &nbsp;
+        loading ...
         </p>
       </h3>
       <p className="dark:text-gray-400"> {/* Placeholder for description */}
@@ -73,11 +73,11 @@ const LoadingSkeleton = () => {
     </div>
     <div>
       <span className="mb-5 inline-block rounded bg-purple-500 px-4 py-1 text-center text-xs font-semibold leading-loose text-white"> {/* Placeholder for date */}
-        loading ...
+         ...
       </span>
       <h3>
         <p className="mb-4 inline-block text-xl font-semibold text-gray-400 hover:text-purple-600 dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"> {/* Placeholder for title */}
-          &nbsp;
+        loading ...
         </p>
       </h3>
       <p className="dark:text-gray-400"> {/* Placeholder for description */}
