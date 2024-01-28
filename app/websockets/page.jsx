@@ -84,7 +84,7 @@ server.listen(3001, () => {
 
         <p className="text-lg mb-4">
           The WebSocket API is an advanced technology that makes it possible to
-          open a two-way interactive communication session between the user's
+          open a two-way interactive communication session between the user&apos;s
           browser and a server.
         </p>
 
@@ -98,6 +98,10 @@ server.listen(3001, () => {
           real-time without the overhead of traditional HTTP requests and
           responses.
         </p>
+
+        <div className="p-3">
+          <img src="https://www.websocket.cz/web/img/rest-to-websocket-infrastructure.png" alt="" />
+        </div>
 
         <h4 className="p-4 text-2xl font-bold">demo :</h4>
 
