@@ -23,7 +23,7 @@ const toggle = () =>{
     <header className="w-full p-4  px-5 sm:px-10 flex items-center justify-between dark:bg-zinc-900">
         
 <Link href={'/'}>
-<h2 className="text-xl md:text-2xl font-bold text-purple-500 p-4">&lt;Dipak Khade /&gt;</h2>
+<h2 className="text-xl md:text-2xl font-bold text-purple-500 md:p-4">&lt;Dipak Khade /&gt;</h2>
 </Link>
 <div className="md:ml-[40vw]">
 <AuthButton/>

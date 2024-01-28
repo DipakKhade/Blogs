@@ -2,8 +2,8 @@ import React from 'react'
 
 const LoadingSkeleton = () => {
   return (
-    <div className='flex'>
-    <div className="mb-10 w-full border border-purple-400 p-2 rounded-md animate-pulse md:w-1/2 lg:w-1/3">
+    <div className='md:flex m-2'>
+    <div className="mb-10 w-full border m-2 border-purple-400 p-2 rounded-md animate-pulse md:w-1/2 lg:w-1/3">
     <div className="mb-8 overflow-hidden rounded bg-gray-200">
       <div className="w-full h-40"></div> {/* Placeholder for image */}
     </div>
@@ -21,7 +21,7 @@ const LoadingSkeleton = () => {
       </p>
     </div>
   </div>
-  <div className="mb-10 w-full border border-purple-400 p-2 rounded-md animate-pulse md:w-1/2 lg:w-1/3">
+  <div className="mb-10 m-2 w-full border border-purple-400 p-2 rounded-md animate-pulse md:w-1/2 lg:w-1/3">
     <div className="mb-8 overflow-hidden rounded bg-gray-200">
       <div className="w-full h-40"></div> {/* Placeholder for image */}
     </div>
@@ -41,7 +41,7 @@ const LoadingSkeleton = () => {
   </div>
 
 
-  <div className="mb-10 w-full border border-purple-400 p-2 rounded-md animate-pulse md:w-1/2 lg:w-1/3">
+  <div className="mb-10 m-2 w-full border border-purple-400 p-2 rounded-md animate-pulse md:w-1/2 lg:w-1/3">
     <div className="mb-8 overflow-hidden rounded bg-gray-200">
       <div className="w-full h-40"></div> {/* Placeholder for image */}
     </div>
