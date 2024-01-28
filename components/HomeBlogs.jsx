@@ -7,18 +7,23 @@ import Loading from './loading';
 
 const HomeBlogs = () => {
 const [blog, setBlog] = useState()
+const [fetched, setFetched] = useState(false)
  useEffect(() => {
   ( async()=>{
     const local='http://localhost:3000/'
     const domain='https://dipak-khade-blogs.vercel.app'
-    const data= await fetch(`${domain}/api/blogs`)
+    const data= await fetch(`${local}/api/blogs`)
     const responce=await data.json()
     setBlog(responce)
+    setFetched(true)
     // console.log(responce)
   })();
  
  }, [])
  
+ if(!fetched){
+  return <Loading/>
+ }
 
   return (
     <div className='dark:bg-zinc-900 z-0'>
