@@ -85,7 +85,7 @@ const page = () => {
 
     <div>
       <h3>HTML Tree</h3>
-<p>HTML tree refers to the hierarchical structure of HTML elements on a webpage. It's essentially a representation of how HTML elements are nested within each other.
+<p>HTML tree refers to the hierarchical structure of HTML elements on a webpage. Its essentially a representation of how HTML elements are nested within each other.
 
 Here s a simple example of an HTML tree:</p>
       <div className="bg-slate-950 text-white p-4 rounded-md mockup-code">
