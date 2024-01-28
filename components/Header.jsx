@@ -56,7 +56,7 @@ const toggle = () =>{
         </button>
 
 
-        <nav className=" w-max py-3 px-6 sm:px-8 border border-solid border-dark rounded-full dark:text-white font-medium capitalize  items-center flex  sm:hidden
+        <nav className="w-max py-3 px-6 sm:px-8 border border-solid border-dark rounded-full dark:text-white font-medium capitalize  items-center flex  sm:hidden
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
         transition-all ease duration-300
         "
@@ -80,12 +80,12 @@ const toggle = () =>{
         </nav>
 
 
-        <nav className=" w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center hidden sm:flex
+        <nav className="w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center hidden sm:flex
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50">
             <Link href="/" className="mr-2 dark:text-white">Home</Link>
             <Link href={'https://protfolio-with-next-js-dfx1.vercel.app/'} className="mx-2 dark:text-white">About</Link>
             <Link href={'https://protfolio-with-next-js-dfx1.vercel.app/contact'} className="mx-2 dark:text-white">Contact</Link>
-            <Link href={'https://protfolio-with-next-js-dfx1.vercel.app/contact'} className="mx-2 dark:text-white">Portfolio</Link>
+            <Link href={'https://protfolio-with-next-js-dfx1.vercel.app/'} className="mx-2 dark:text-white">Portfolio</Link>
             <button onClick={() => setMode(mode === "light" ? "dark" : "light")  }
             className={cx("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1 dark:text-white", mode === "light" ? "bg-dark text-light" :
             "bg-light text-dark" )}
