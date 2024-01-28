@@ -63,6 +63,7 @@ src={route1}
 width={800}
 height={900}
 alt=''
+className='mix-blend-multiply'
         />
 <p className='p-2'>if you write this code in Your dashbord/page.tsx , its route address is localhost:3000/dashbord</p>
         
@@ -93,6 +94,7 @@ src={route4}
 width={800}
 height={900}
 alt=''
+className='mix-blend-multiply'
         />
 </div>
 

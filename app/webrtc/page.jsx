@@ -1,7 +1,7 @@
 export default function WebRTCBlog() {
   return (
     <div className="min-h-screen flex justify-center items-center dark:bg-zinc-900 dark:text-white">
-      <div className="max-w-4xl p-8 rounded-lg shadow-md">
+      <div className="max-w-4xl p-8 rounded-lg">
         <h1 className="text-4xl font-bold mb-6 text-center text-purple-400">Understanding WebRTC: Revolutionizing Real-time Communication</h1>
         <span className="mb-5 inline-block rounded bg-purple-500 px-4 py-1 text-center text-xs font-semibold leading-loose text-white">
                   27 Jan 2024
@@ -9,7 +9,7 @@ export default function WebRTCBlog() {
         <p className="text-lg mb-4">
           WebRTC (Web Real-time Communication) is an industry effort to enhance the web browsing model. It allows browsers to directly exchange real-time media with other browsers in a peer-to-peer fashion through secure access to input peripherals like webcams and microphones.
         </p>
-        <img src="https://resi.io/wp-content/uploads/2022/05/what-is-web-rtc-resi.png" alt="" className="w-full" />
+        <img src="https://resi.io/wp-content/uploads/2022/05/what-is-web-rtc-resi.png" alt="" className="w-full mix-blend-multiply"/>
        
         <p className="text-lg mb-4 pt-3">
           Traditional web architecture is based on the client-server paradigm, where a client sends an HTTP request to a server and gets a response containing the information requested. In contrast, WebRTC allows the exchange of data among N peers. In this exchange, peers talk to each other without a server in the middle.

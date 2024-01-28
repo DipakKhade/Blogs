@@ -64,6 +64,7 @@ const page = () => {
               width={800}
               alt=""
               height={900}
+              className="mix-blend-multiply"
             />
           </div>
           <h5 className="p-5">Start editing app/page.js </h5>
