@@ -5,7 +5,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription ,blogref}) => {
       <>
         <div className="w-full px-4 md:w-1/2 lg:w-1/3 ">
         <Link href={blogref || '/'}>
-          <div className="mb-10 w-full border border-purple-400 p-2 rounded-md">
+          <div className="mb-10 w-full border border-zinc-800 dark:border-zinc-400 p-2 rounded-md hover:shadow-lg hover:scale-105 transition ease-in-out delay-150">
             <div className="mb-8 overflow-hidden rounded ">
               <img src={image} alt="" className="w-full" />
             </div>
