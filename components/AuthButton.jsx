@@ -11,12 +11,12 @@ const AuthButton = () => {
 {
     status=='unauthenticated' ? <button 
     onClick={()=>signIn('github')}
-    className="rounded-full border-2 border-purple-500 px-6 py-1 text-purple-600 transition-colors hover:bg-purple-500 hover:text-white">Login</button>
+    className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">Login</button>
    
     :
-    <button
+    <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
     onClick={()=>signOut()}
-     className="rounded-full border-2 border-purple-500 px-6 py-1 text-purple-600 transition-colors hover:bg-purple-500 hover:text-white">Log out</button>
+    >Log out</button>
 }
     </div>
      

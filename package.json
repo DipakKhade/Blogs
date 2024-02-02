@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tsparticles/engine": "^3.2.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.2.1",
     "clsx": "^2.1.0",
+    "framer-motion": "^11.0.3",
     "mongoose": "^8.0.4",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
@@ -18,7 +22,9 @@
     "nextjs-toploader": "^1.6.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-element-to-jsx-string": "^15.0.0",
     "react-icons": "^5.0.1",
+    "tailwind-merge": "^2.2.1",
     "use-debounce": "^10.0.0",
     "uuid": "^9.0.1"
   },

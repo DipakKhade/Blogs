@@ -6,7 +6,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 const Footer = () => {
   return (
     <>
-        <footer className="p-4 dark:rounded-none rounded-lg  md:p-8 lg:p-10 dark:bg-zinc-900 bottom-0 w-full">
+        <footer className="p-4 dark:rounded-none rounded-lg  md:p-8 lg:p-10 dark:bg-black bottom-0 w-full">
   <div className="mx-auto text-cente">
       
       
@@ -39,3 +39,6 @@ const Footer = () => {
 }
 
 export default Footer
+
+
+       

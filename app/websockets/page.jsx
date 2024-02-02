@@ -76,7 +76,7 @@ server.listen(3001, () => {
 `;
 
   return (
-    <div className="min-h-screen justify-center items-center dark:bg-zinc-900 dark:text-white">
+    <div className="min-h-screen justify-center items-center dark:bg-black dark:text-white">
       <div className="max-w-6xl p-8  md:pl-[22vw]">
         <h2 className="text-4xl font-bold mb-6 text-center text-purple-400">
           The WebSocket API

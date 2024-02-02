@@ -1,92 +1,98 @@
-import React from 'react'
-
+'use client';
+import React, { useEffect, useState } from "react";
+import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 const LoadingSkeleton = () => {
   return (
     <>
 
-<div className="p-4 md:p-4">
-        <section className="pt-4 dark:bg-zinc-900 lg:pb-20 ">
-          <div className="container">
-            <div className="-mx-4 flex flex-wrap">
-              <div className="w-full px-4">
-                <div className="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
-                  <span className="mb-2 block text-lg font-semibold text-purple-500">
-                    Blogs
-                  </span>
-                  <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px]">
-                    Recent Blog
-                  </h2>
-                  <p className="text-base text-body-color dark:text-white">
-                    Blogs about web tech
-                  </p>
+<div className="flex gap-12 flex-wrap justify-center">
+<CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xl font-bold text-neutral-600 dark:text-white"
+                >
+                  Loading...
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                >
+                  Loading...
+                </CardItem>
+                <CardItem
+                  translateZ="100"
+                  rotateX={20}
+                  rotateZ={-10}
+                  className="w-full mt-4"
+                >
+                  <div className="h-60 w-full bg-gray-300 animate-pulse rounded-xl"></div>
+                </CardItem>
+                <div className="flex justify-between items-center mt-20">
+                  <CardItem
+                    translateZ={20}
+                    translateX={-40}
+                    as="button"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  >
+                    Loading...
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    translateX={40}
+                    as="button"
+                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  >
+                    Loading...
+                  </CardItem>
                 </div>
-              </div>
-            </div>
-
-            
-          </div>
-        </section>
-      </div>
-    <div className='md:flex m-1'>
-   
-    <div className="mb-10 w-full border md:m-2 border-purple-400 p-2 rounded-md animate-pulse md:w-1/2 lg:w-1/3">
-    <div className="mb-8 overflow-hidden rounded bg-gray-200">
-      <div className="w-full h-40"></div> {/* Placeholder for image */}
-    </div>
-    <div>
-      <span className="mb-5 inline-block rounded bg-purple-500 px-4 py-1 text-center text-xs font-semibold leading-loose text-white"> {/* Placeholder for date */}
-         ...
-      </span>
-      <h3>
-        <p className="mb-4 inline-block text-xl font-semibold text-gray-400 hover:text-purple-600 dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"> {/* Placeholder for title */}
-        loading ...
-        </p>
-      </h3>
-      <p className="dark:text-gray-400"> {/* Placeholder for description */}
-        &nbsp;
-      </p>
-    </div>
-  </div>
-  <div className="mb-10 md:m-2 w-full border border-purple-400 p-2 rounded-md animate-pulse md:w-1/2 lg:w-1/3">
-    <div className="mb-8 overflow-hidden rounded bg-gray-200">
-      <div className="w-full h-40"></div> {/* Placeholder for image */}
-    </div>
-    <div>
-      <span className="mb-5 inline-block rounded bg-purple-500 px-4 py-1 text-center text-xs font-semibold leading-loose text-white"> {/* Placeholder for date */}
-         ...
-      </span>
-      <h3>
-        <p className="mb-4 inline-block text-xl font-semibold text-gray-400 hover:text-purple-600 dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"> {/* Placeholder for title */}
-        loading ...
-        </p>
-      </h3>
-      <p className="dark:text-gray-400"> {/* Placeholder for description */}
-        &nbsp;
-      </p>
-    </div>
-  </div>
-
-
-  <div className="mb-10 md:m-2 w-full border border-purple-400 p-2 rounded-md animate-pulse md:w-1/2 lg:w-1/3">
-    <div className="mb-8 overflow-hidden rounded bg-gray-200">
-      <div className="w-full h-40"></div> {/* Placeholder for image */}
-    </div>
-    <div>
-      <span className="mb-5 inline-block rounded bg-purple-500 px-4 py-1 text-center text-xs font-semibold leading-loose text-white"> {/* Placeholder for date */}
-         ...
-      </span>
-      <h3>
-        <p className="mb-4 inline-block text-xl font-semibold text-gray-400 hover:text-purple-600 dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"> {/* Placeholder for title */}
-        loading ...
-        </p>
-      </h3>
-      <p className="dark:text-gray-400"> {/* Placeholder for description */}
-        &nbsp;
-      </p>
-    </div>
-  </div>
-  </div>
-
+              </CardBody>
+            </CardContainer>
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xl font-bold text-neutral-600 dark:text-white"
+                >
+                  Loading...
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                >
+                  Loading...
+                </CardItem>
+                <CardItem
+                  translateZ="100"
+                  rotateX={20}
+                  rotateZ={-10}
+                  className="w-full mt-4"
+                >
+                  <div className="h-60 w-full bg-gray-300 animate-pulse rounded-xl"></div>
+                </CardItem>
+                <div className="flex justify-between items-center mt-20">
+                  <CardItem
+                    translateZ={20}
+                    translateX={-40}
+                    as="button"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  >
+                    Loading...
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    translateX={40}
+                    as="button"
+                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  >
+                    Loading...
+                  </CardItem>
+                </div>
+              </CardBody>
+            </CardContainer>
+</div>
   </>
   )
 }
