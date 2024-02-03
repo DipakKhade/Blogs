@@ -13,13 +13,15 @@ export function Card() {
       try {
         const local = "http://localhost:3000/";
         const domain = "https://dipak-khade-blogs.vercel.app";
-        const data = await fetch(`${domain}/api/blogs`);
+        const data = await fetch(`${local}/api/blogs`);
         const response = await data.json();
+        response.blogs.sort((a, b) => new Date(b.date) - new Date(a.date));
+
         setBlog(response);
         setFetched(true);
       } catch (error) {
         console.error("Error fetching data:", error);
-        // Handle error, e.g., set error state
+        // Handle error
       }
     };
 
