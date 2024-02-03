@@ -12,7 +12,7 @@ export function Card() {
       try {
         const local = "http://localhost:3000/";
         const domain = "https://dipak-khade-blogs.vercel.app";
-        const data = await fetch(`${domain}/api/blogs`);
+        const data = await fetch(`${local}/api/blogs`);
         const response = await data.json();
         response.blogs.sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -36,7 +36,7 @@ export function Card() {
           [blog.blogs[0]].map((b) => (
             <Link key={b._id} href={`${b._id}`}>
 
-            <div className="card w-96 bg-base-100  dark:text-white rounded-lg p-3">
+            <div className="card w-80 bg-base-100  dark:text-white rounded-lg p-3">
   <figure><Image src={b.image} width={400} height={100} alt="blogimg" className="object-cover h-48 w-96" /></figure>
   <div className="card-body">
     <h2 className="card-title text-xl font-semibold text-purple-400 hover:text-purple-700">

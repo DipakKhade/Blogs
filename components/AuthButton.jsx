@@ -11,7 +11,7 @@ const AuthButton = () => {
 {
     status=='unauthenticated' ? <button 
     onClick={()=>signIn('github')}
-    className="btn dark:btn-neutral border">Login</button>
+    className="btn dark:btn-neutral">Login</button>
    
     :
     <button className="btn dark:btn-neutral"
