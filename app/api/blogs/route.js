@@ -10,11 +10,11 @@ export async function GET() {
 
 
   export async function POST(req) {
-    const { image, date, CardTitle, CardDescription ,blogref } = await req.json();
+    const { image, date, CardTitle, CardDescription ,blogref,mainimage,subtitles,maindesc } = await req.json();
   
     await connectTomongoDB();
   
-    await Blog.create({ image, date, CardTitle, CardDescription ,blogref });
+    await Blog.create( { image, date, CardTitle, CardDescription ,blogref,mainimage,subtitles,maindesc });
   
     return NextResponse.json({ massage: "Blog created" }, { status: 201 });
   }

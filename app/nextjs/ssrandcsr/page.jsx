@@ -13,7 +13,7 @@ const Page = () => {
   ]
   return (
     <>
-    <div className=' p-4 font-medium dark:bg-zinc-900 dark:text-white'>
+    <div className=' p-4 font-medium  dark:text-white'>
     <nav>
         <ul className="flex p-4 space-x-4 text-xl font-bold text-purple-500 flex-wrap">
         <ul className="md:p-4 md:space-x-4 text-xl font-bold text-purple-500 md:flex">

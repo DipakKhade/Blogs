@@ -20,12 +20,10 @@ const toggle = () =>{
   setClick(!click)
 }
   return (
-    <header className="w-full p-4  px-5 sm:px-10 flex items-center justify-between dark:bg-black">
+    <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between ">
         
-<Link href={'/'}>
-<h2 className="text-xl md:text-2xl font-bold text-zinc-900-500 dark:text-white md:p-4">&lt;Dipak Khade /&gt;</h2>
-</Link>
-<div className="md:ml-[40vw]">
+
+<div className="md:ml-[70vw] mt-2 border border-purple-400 p-2 rounded-sm hover:text-black">
 <AuthButton/>
 </div>
 

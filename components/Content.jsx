@@ -1,10 +1,13 @@
+
 import React from 'react'
 import Link from 'next/link'
 
 const Content = () => {
+ 
   return (
+    <>
     <div>
-       <div className="p-4 flex flex-wrap justify-center gap-2 dark:bg-black">
+       <div className="p-4 flex flex-wrap justify-center gap-2 bg-transparent">
       <Link href="/nextjs">
         <button className="rounded-lg bg-purple-200 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">Next.js</button>
       </Link>
@@ -24,6 +27,9 @@ const Content = () => {
     
 
     </div>
+
+
+    </>
   )
 }
 

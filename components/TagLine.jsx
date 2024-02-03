@@ -8,7 +8,7 @@ export  function SparklesPreview() {
   let parCol;
   theme=='light' ? parCol=='#FFFFFF' : '#d67ed0'
   return (
-    <div className="h-[30rem] w-full dark:bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <div className="h-[20rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
       <h1 className="md:text-7xl text-3xl lg:text-4xl font-bold text-center dark:text-white relative z-20">
       Discover the artistry behind web development and tech innovation .
       </h1>

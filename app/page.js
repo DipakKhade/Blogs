@@ -1,16 +1,16 @@
 
 import Content  from "../components/Content";
 import { Card } from "@/components/Card";
-import {SparklesPreview} from '../components/TagLine'
+import {TypewriterEffectSmoothDemo} from '../components/TagLine2'
 export default function Home() {
   return (
   <>
-  <main className="min-h-screen dark:bg-black">
+  <main className="min-h-screen">
 
   <Content/>
-  <div className=" mx-auto text-center flex flex-col item-center">
+  <div className="text-center flex flex-col item-center">
 
-          <SparklesPreview/>
+        <TypewriterEffectSmoothDemo/>
           </div>
  <Card/>
 

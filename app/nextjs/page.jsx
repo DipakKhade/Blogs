@@ -16,7 +16,7 @@ const page = () => {
   
   return (
     <>
-      <div className="p-8 dark:bg-zinc-900 dark:text-white">
+      <div className="p-8  dark:text-white">
       <nav>
         <ul className="flex p-4 space-x-4 text-xl font-bold text-purple-500 flex-wrap">
         <li className='ml-6 p-2 rounded-md text-purple-500 dark:text-white font-semibold cursor-pointer hover:underline'>Project Setup</li>
@@ -50,7 +50,7 @@ const page = () => {
             <h4>Run the development server</h4>
             <div className="bg-slate-950 p-2 text-slate-200 h-12 rounded-md md:w-[80vw]">
               <pre>
-                <code>cd dipakkhadeblog</code>
+                <code>yarn dev</code>
               </pre>
             </div>
 
@@ -64,7 +64,7 @@ const page = () => {
               width={800}
               alt=""
               height={900}
-              className="mix-blend-multiply"
+             
             />
           </div>
           <h5 className="p-5">Start editing app/page.js </h5>
@@ -74,28 +74,7 @@ const page = () => {
       </div>
 
     
-  <div className="flex flex-row mx-auto p-4 dark:bg-zinc-900">
-  <Link href={'/'}>
-    <button type="button" className="bg-gray-800 text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-purple-700 hover:text-white px-3 md:ml-[8vw] ml-4">
-      <div className="flex flex-row align-middle">
-        <svg className="w-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fillRule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd"></path>
-        </svg>
-        <p className="ml-2">Prev</p>
-      </div>
-    </button>
-</Link>
-<Link href={'/nextjs/approuter'}>
-    <button type="button" className="bg-gray-800 text-white rounded-r-md py-2 border-l border-gray-200 hover:bg-purple-700 hover:text-white px-3 md:ml-[70vw] ml-20">
-      <div className="flex flex-row align-middle">
-        <span className="mr-2">Next</span>
-        <svg className="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-        </svg>
-      </div>
-    </button>
-</Link>
-</div>
+  
     </>
   );
 };
