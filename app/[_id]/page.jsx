@@ -95,10 +95,8 @@ const [mounted, setMounted] = useState(false)
    
       </div>
       <div className="ml-[40vw]">
-      <div className="mockup-code">
-  <pre data-prefix="1"><code>Dipak Khade</code></pre> 
-  <pre data-prefix="2"><code>{blog.date}</code></pre> 
-</div>
+     <p>Dipak Khade</p>
+     <p>{blog.date}</p>
 </div>
     </TracingBeam>
       )}
