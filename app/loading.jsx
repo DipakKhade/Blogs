@@ -3,9 +3,9 @@ import React from 'react'
 const Loading = () => {
   return (
     
-<div className='p-[45vw]'>
+<div className='min-h-screen flex justify-center'>
 
-<span className="loading loading-spinner loading-xs"></span>
+<span className="loading loading-spinner loading-lg"></span>
 </div>
   
    

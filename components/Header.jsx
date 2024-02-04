@@ -23,7 +23,7 @@ const toggle = () =>{
     <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between ">
         
 
-<div className="md:ml-[70vw] mt-2 border border-purple-400 p-2 rounded-sm hover:text-black">
+<div className="md:ml-[70vw] mt-1 p-2 rounded-sm hover:text-black">
 <AuthButton/>
 </div>
 

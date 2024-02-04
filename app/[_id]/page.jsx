@@ -5,10 +5,11 @@ import { twMerge } from "tailwind-merge";
 import TracingBeam  from "../../components/ui/tracing-beam";
 import { Contact } from "lucide-react";
 import Content from "@/components/Content";
+import Loading from "../loading";
 export function Page({ params }) {
   const [blog, setBlog] = useState(null);
   const [fetched, setFetched] = useState(false);
-
+const [mounted, setMounted] = useState(false)
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -19,15 +20,23 @@ export function Page({ params }) {
         const currentBlog = await response.blogs.find((blog) => blog._id === params._id);
         setBlog(currentBlog);
         setFetched(true);
-        console.log(response);
+        // console.log(response);
+        setMounted(true)
+
       } catch (error) {
-        console.error("Error fetching data:", error);
+        // console.error("Error fetching data:", error);
         // Handle error
       }
     };
 
     fetchData();
   }, [params._id]);
+
+  if(!mounted){
+    return <Loading/>
+  
+  }
+
 
   return (
     <>
