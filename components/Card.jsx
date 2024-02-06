@@ -36,13 +36,13 @@ export function Card() {
           [blog.blogs[0]].map((b) => (
             <Link key={b._id} href={`${b._id}`}>
 
-            <div className="card w-80 bg-base-100  dark:text-white rounded-lg p-3">
+            <div className="card w-80 border  dark:text-white rounded-lg p-3">
   <figure><Image src={b.image} width={400} height={100} alt="blogimg" className="object-cover h-48 w-96" /></figure>
   <div className="card-body">
     <h2 className="card-title text-xl font-semibold text-purple-400 hover:text-purple-700">
     {b.CardTitle}
     </h2>
-    <p>  {b.CardDescription}</p>
+    <p className="text-slate-800 dark:text-slate-100">  {b.CardDescription}</p>
     <div className="card-actions flex justify-end">
       <div className="badge badge-outline"> {b.date}</div>
     </div>

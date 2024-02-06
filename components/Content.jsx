@@ -20,6 +20,7 @@ const Content = () => {
      <button className="rounded-lg bg-purple-200 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">Web Development Basics</button>
      </Link>
      <Link href={'/'}>
+  
      <button className="rounded-lg bg-purple-200 px-2 py-1 font-medium text-gray-600 hover:bg-gray-200">DSA</button>
      </Link>
     
