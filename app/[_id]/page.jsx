@@ -47,18 +47,18 @@ const [mounted, setMounted] = useState(false)
       <Content/>
           <div className="mb-10">
             <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
-              {blog.CardTitle}
+              {blog?.CardTitle}
             </h2>
  
             <p className={twMerge( "text-xl mb-4")}>
-              {blog.CardDescription}
+              {blog?.CardDescription}
             </p>
  
             <div className="text-sm  prose prose-sm dark:prose-invert">
-              {blog?.image && (
+              {blog?.image && blog.mainimage && blog.mainimage.length >= 3  && (
                 
                 <Image
-                  src={blog.mainimage[0]}
+                  src={blog?.mainimage[0]}
                   alt="blog thumbnail"
                   height="1000"
                   width="1000"
@@ -67,10 +67,10 @@ const [mounted, setMounted] = useState(false)
               )}
               {blog.maindesc[0]}
               
-              {blog?.image && (
+              {blog?.image && blog.mainimage && blog.mainimage.length >= 3  && (
                 
                 <Image
-                  src={blog.mainimage[1]}
+                  src={blog?.mainimage[1]}
                   alt="blog thumbnail"
                   height="1000"
                   width="1000"
@@ -78,25 +78,25 @@ const [mounted, setMounted] = useState(false)
                 />
               )}
 
-              {blog.maindesc[1]}
+              {blog?.maindesc[1]}
 
-              {blog?.image && (
+              {blog?.image && blog.mainimage && blog.mainimage.length >= 3  && (
               <Image
-                  src={blog.mainimage[2]}
+                  src={blog?.mainimage[2]}
                   alt="blog thumbnail"
                   height="1000"
                   width="1000"
                   className="rounded-lg mb-10 object-cover"
                 />
               )}
-              {blog.maindesc[2]}
+              {blog?.maindesc[2]}
             </div>
           </div>
    
       </div>
       <div className="ml-[40vw]">
      <p>Dipak Khade</p>
-     <p>{blog.date}</p>
+     <p>{blog?.date}</p>
 </div>
     </TracingBeam>
       )}

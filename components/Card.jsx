@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Loading from "./loading";
 import Link from "next/link";
+import {PaginationDemo} from '../components/Pagination'
 export function Card() {
   const [blog, setBlog] = useState();
   const [fetched, setFetched] = useState(false);
@@ -33,11 +34,11 @@ export function Card() {
       <div className="flex flex-wrap justify-center gap-8 hover:cursor-pointer p-4 md:p-0">
      
         {fetched ? (
-          [blog.blogs[0]].map((b) => (
+         blog.blogs.map((b) => (
             <Link key={b._id} href={`${b._id}`}>
 
             <div className="card w-80 border  dark:text-white rounded-lg p-3">
-  <figure><Image src={b.image} width={400} height={100} alt="blogimg" className="object-cover h-48 w-96" /></figure>
+  <figure><Image src={b?.image} width={400} height={100} alt="blogimg" className="object-cover h-48 w-96" /></figure>
   <div className="card-body">
     <h2 className="card-title text-xl font-semibold text-purple-400 hover:text-purple-700">
     {b.CardTitle}
@@ -56,6 +57,9 @@ export function Card() {
           <Loading />
         )}
       </div>
+     <div className="pt-24">
+     <PaginationDemo/>
+     </div>
     </>
   );
 }
