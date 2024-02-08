@@ -13,7 +13,7 @@ export function Card() {
       try {
         const local = "http://localhost:3000/";
         const domain = "https://dipak-khade-blogs.vercel.app";
-        const data = await fetch(`${domain}/api/blogs`);
+        const data = await fetch(`${local}/api/blogs`);
         const response = await data.json();
         response.blogs.sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -37,15 +37,15 @@ export function Card() {
          blog.blogs.map((b) => (
             <Link key={b._id} href={`${b._id}`}>
 
-            <div className="card w-80 border  dark:text-white rounded-lg p-3">
-  <figure><Image src={b?.image} width={400} height={100} alt="blogimg" className="object-cover h-48 w-96" /></figure>
+            <div className="card w-96 hover:opacity-90 dark:text-white rounded-lg p-3">
+  <figure><Image src={b?.image} width={400} height={100} alt="blogimg" className="object-cover h-48 w-96 border" /></figure>
   <div className="card-body">
-    <h2 className="card-title text-xl font-semibold text-purple-400 hover:text-purple-700">
+    <h2 className="card-title text-xl ">
     {b.CardTitle}
     </h2>
-    <p className="text-slate-800 dark:text-slate-100">  {b.CardDescription}</p>
+    {/* <p className="text-slate-800 dark:text-slate-100">  {b.CardDescription}</p> */}
     <div className="card-actions flex justify-end">
-      <div className="badge badge-outline"> {b.date}</div>
+      <div> {b.date}</div>
     </div>
   </div>
 </div>

@@ -15,7 +15,7 @@ const [mounted, setMounted] = useState(false)
       try {
         const local = "http://localhost:3000";
         const domain='https://dipak-khade-blogs.vercel.app'
-        const data = await fetch(`${domain}/api/blogs`);
+        const data = await fetch(`${local}/api/blogs`);
         const response = await data.json();
         const currentBlog = await response.blogs.find((blog) => blog._id === params._id);
         setBlog(currentBlog);
@@ -42,7 +42,7 @@ const [mounted, setMounted] = useState(false)
     <>
       {fetched && blog && (
         
-    <TracingBeam className="mt-2 md:mt-24 p-3">
+    <div className="mt-2 md:mt-24 p-3">
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
       <Content/>
           <div className="mb-10">
@@ -98,7 +98,7 @@ const [mounted, setMounted] = useState(false)
      <p>Dipak Khade</p>
      <p>{blog?.date}</p>
 </div>
-    </TracingBeam>
+    </div>
       )}
     </>
   );
