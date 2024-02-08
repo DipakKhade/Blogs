@@ -4,6 +4,7 @@ import Providers from './Providers'
 import Footer from '@/components/Footer'
 import NextTopLoader from 'nextjs-toploader';
 import {NextAuthProvider} from './AuthProvider'
+import Header from '@/components/Header';
 const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Dipak Khade | Blog',
@@ -17,10 +18,10 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
      
 
-      
       <Providers>
       <NextAuthProvider>
       <NextTopLoader/>
+      <Header/>
 
    
       {children}

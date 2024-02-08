@@ -5,8 +5,6 @@ import { twMerge } from "tailwind-merge";
 import Content from "@/components/Content";
 import Loading from "../loading";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import SlugHeader from "@/components/SlugHeader";
-import Header from "@/components/Header";
 export function Page({ params }) {
   const [blog, setBlog] = useState(null);
   const [fetched, setFetched] = useState(false);
@@ -41,8 +39,6 @@ const [mounted, setMounted] = useState(false)
 
   return (
     <>
-    {/* <SlugHeader/> */}
-    <Header/>
     <MaxWidthWrapper>
     
       {fetched && blog && (
