@@ -15,7 +15,7 @@ const [mounted, setMounted] = useState(false)
       try {
         const local = "http://localhost:3000";
         const domain='https://dipak-khade-blogs.vercel.app'
-        const data = await fetch(`${local}/api/blogs`);
+        const data = await fetch(`${domain}/api/blogs`);
         const response = await data.json();
         const currentBlog = await response.blogs.find((blog) => blog._id === params._id);
         setBlog(currentBlog);
