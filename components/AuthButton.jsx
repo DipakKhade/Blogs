@@ -7,9 +7,9 @@ const AuthButton = () => {
     const {data:session , status} = useSession()
     // console.log(session,status)
   return (
-    <div className='-z-10 flex gap-1'>
+    <div className='-z-10 flex gap-2'>
 {
-    status=='unauthenticated' ? <button className='mt-2 hover:text-blue-600 hover:underline'
+    status=='unauthenticated' ? <button className='md:mt-2 hover:text-blue-600 hover:underline'
     onClick={()=>signIn('github')}
     >Login</button>
    

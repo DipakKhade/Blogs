@@ -4,11 +4,11 @@ import GoogleProvider from 'next-auth/providers/google'
 
 const authOptions={
     providers:[
-        GithubProvider({
-            clientId:process.env.GITHUB_CLIENT_ID,
-            clientSecret:process.env.GITHUB_CLIENT_SECRET ,
-            redirectUri: "https://dipak-khade-blogs.vercel.app/auth/callback",
-        }),
+        // GithubProvider({
+        //     clientId:process.env.GITHUB_CLIENT_ID,
+        //     clientSecret:process.env.GITHUB_CLIENT_SECRET ,
+        //     redirectUri: "https://dipak-khade-blogs.vercel.app/auth/callback",
+        // }),
         GoogleProvider({
             clientId:process.env.GOOGLE_CLIENT_ID,
             clientSecret:process.env.GOOGLE_CLIENT_SECRET,
