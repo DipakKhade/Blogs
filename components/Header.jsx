@@ -57,16 +57,16 @@ const Header = () => {
       </button>
 
       <nav
-        className="w-max py-3 px-6 sm:px-8  border-dark  dark:text-white font-medium capitalize  items-center flex  sm:hidden
-        fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
-        transition-all ease duration-300
-        "
+        className="w-max py-3 px-6 sm:px-8  border-dark  dark:text-white font-medium capitalize  items-center flex  sm:hidden  fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
+        transition-all ease duration-300 hover:underline-offset-4"
+        
+       
         style={{
           top: click ? "1rem" : "-5rem",
         }}
       >
         <Link href="/" className="mr-2">
-          Home
+         Home
         </Link>
         <Link
           href={"https://protfolio-with-next-js-dfx1.vercel.app/"}
@@ -94,18 +94,18 @@ const Header = () => {
 
       <nav className="sm:flex border gap-6 w-screen justify-end backdrop-blur-sm z-50 fixed p-6 top-0 hidden rounded-sm left-0">
       <div className="mt-2">
-        <Link href="/" className="mr-2 dark:text-white">
-          Home
+        <Link href="/" className="mr-2 dark:text-white hover:text-blue-600 hover:underline">
+         Home
         </Link>
         <Link
           href={"https://protfolio-with-next-js-dfx1.vercel.app/"}
-          className="mx-2 dark:text-white"
+          className="mx-2 dark:text-white hover:text-blue-600 hover:underline"
         >
           About
         </Link>
         <Link
           href={"https://protfolio-with-next-js-dfx1.vercel.app/contact"}
-          className="mx-2 dark:text-white"
+          className="mx-2 dark:text-white hover:text-blue-600 hover:underline"
         >
           Contact
         </Link>

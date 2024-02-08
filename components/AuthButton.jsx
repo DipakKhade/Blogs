@@ -9,19 +9,19 @@ const AuthButton = () => {
   return (
     <div className='-z-10 flex gap-1'>
 {
-    status=='unauthenticated' ? <button 
+    status=='unauthenticated' ? <button className='mt-2 hover:text-blue-600 hover:underline'
     onClick={()=>signIn('github')}
     >Login</button>
    
     :
-    <button 
+    <button className='hover:text-blue-600 hover:underline'
     onClick={()=>signOut()}
     >Log out</button>
 }
 {
   status=='authenticated' && <Avatar>
   <AvatarImage src={session?.user?.image} />
-  <AvatarFallback>CN</AvatarFallback>
+  <AvatarFallback>img</AvatarFallback>
 </Avatar>
 }
 
