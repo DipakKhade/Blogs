@@ -2,7 +2,7 @@ export default function RedisTailwindBlog() {
     return (
       <div className=" min-h-screen flex justify-center items-center dark:bg-zinc-900 dark:text-white">
         <div className="max-w-4xl p-8 rounded-lg ">
-          <h1 className="text-4xl font-bold mb-6 text-center text-purple-400">Next.js Authentication: A Comprehensive Guide</h1>
+          <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">Next.js Authentication: A Comprehensive Guide</h1>
           <p className="text-lg mb-4">
             Next.js, a popular React framework, provides built-in authentication solutions for securing web applications. Understanding Next.js authentication is essential for developers looking to add user authentication and authorization features to their projects.
           </p>
@@ -50,7 +50,7 @@ export default function RedisTailwindBlog() {
                  </button>
              </form>
           
-             <div className='btn bg-purple-400'>commit</div>
+             <div className='btn bg-blue-400'>commit</div>
          </section>
         </div>
       </div>

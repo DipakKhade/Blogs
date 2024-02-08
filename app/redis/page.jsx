@@ -6,7 +6,7 @@ export default function RedisTailwindBlog() {
    
       <div className=" min-h-screen flex justify-center items-center dark:bg-zinc-900 dark:text-white">
       <div className="max-w-4xl p-8 rounded-lg">
-        <h1 className="text-4xl font-bold mb-6 text-center text-purple-400">Redis: A Primer</h1>
+        <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">Redis: A Primer</h1>
         <p className="text-lg mb-4">
           Redis, which stands for Remote Dictionary Server, is an open-source, in-memory data structure store known for
           its versatility, speed, and performance. Originally developed by Salvatore Sanfilippo, Redis has gained
@@ -60,7 +60,7 @@ export default function RedisTailwindBlog() {
                   </button>
               </form>
            
-              <div className='btn bg-purple-400'>commit</div>
+              <div className='btn bg-blue-400'>commit</div>
           </section>
       </div>
       

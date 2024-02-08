@@ -61,9 +61,9 @@ const Header = () => {
   alt="img"
   className="rounded-full m-1"
 />
-         <h5 className="mt-6 text-purple-500 font-bold">{session?.user?.name}</h5>
+         <h5 className="mt-6 text-blue-500 font-bold">{session?.user?.name}</h5>
          </div>
-         : <div className="mt-6 text-purple-500 font-bold">Log in </div>
+         : <div className="mt-6 text-blue-500 font-bold">Log in </div>
       }
             </div>
                   <div className="ml-20 mt-1 text-2xl">
@@ -72,7 +72,7 @@ const Header = () => {
                       aria-label="close sidebar"
                       className="drawer-overlay"
                     >
-                      <RxCross2 className="rounded-full cursor-pointer text-4xl p-1 text-purple-600 mt-3" />
+                      <RxCross2 className="rounded-full cursor-pointer text-4xl p-1 text-blue-600 mt-3" />
                     </label>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ const Header = () => {
 <Link href={'/'}>
                     <li className={clsx(
                  {
-                  "p-5 rounded-md font-semibold cursor-pointer hover:text-purple-500":true,
+                  "p-5 rounded-md font-semibold cursor-pointer hover:text-blue-500":true,
 
                   'text-black dark:text-gray-400':currentRoute==='/'
                  }
@@ -96,9 +96,9 @@ const Header = () => {
 <Link href={'/nextjs'}>
                     <li className={clsx(
                  {
-                  "p-5 rounded-md font-semibold cursor-pointer hover:text-purple-500":true,
+                  "p-5 rounded-md font-semibold cursor-pointer hover:text-blue-500":true,
 
-                  'text-purple-500 dark:text-gray-400':currentRoute.slice(0,7)==='/nextjs'
+                  'text-blue-500 dark:text-gray-400':currentRoute.slice(0,7)==='/nextjs'
                  }
                
                 )}>
@@ -109,22 +109,22 @@ const Header = () => {
                     <Link href={'/webrtc'}>
                     <li className={clsx(
                  {
-                  "p-5 rounded-md font-semibold cursor-pointer hover:text-purple-500":true,
+                  "p-5 rounded-md font-semibold cursor-pointer hover:text-blue-500":true,
 
-                  'text-purple-500 dark:text-gray-400':currentRoute==='/webrtc'
+                  'text-blue-500 dark:text-gray-400':currentRoute==='/webrtc'
                  }
                
                 )}>
                       WebRTC
                     </li>
                     </Link>
-                    <li className="p-5 rounded-md text-slate-600 dark:text-gray-400 font-semibold cursor-pointer hover:text-purple-500">
+                    <li className="p-5 rounded-md text-slate-600 dark:text-gray-400 font-semibold cursor-pointer hover:text-blue-500">
                       Linkedin
                     </li>
-                    <li className="p-5 rounded-md text-slate-600 dark:text-gray-400 font-semibold cursor-pointer hover:text-purple-500 ">
+                    <li className="p-5 rounded-md text-slate-600 dark:text-gray-400 font-semibold cursor-pointer hover:text-blue-500 ">
                       GitHub
                     </li>
-                    <li className="p-5 rounded-md text-slate-600 dark:text-gray-400 font-semibold cursor-pointer hover:text-purple-500">
+                    <li className="p-5 rounded-md text-slate-600 dark:text-gray-400 font-semibold cursor-pointer hover:text-blue-500">
                       PortFolio
                     </li>
                   </ul>
@@ -138,23 +138,23 @@ const Header = () => {
             
               
                 <li>
-                    <Link href={'https://github.com/DipakKhade'} target="_blank" ><FaGithub className="text-2xl hover:text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110 dark:text-gray-400"/></Link>
+                    <Link href={'https://github.com/DipakKhade'} target="_blank" ><FaGithub className="text-2xl hover:text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110 dark:text-gray-400"/></Link>
                 </li>
 
                 <li>
-                <Link href={'https://twitter.com/dipakKhade272'} target="_blank"><FaXTwitter className="text-2xl hover:text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110 dark:text-gray-400"/></Link>
+                <Link href={'https://twitter.com/dipakKhade272'} target="_blank"><FaXTwitter className="text-2xl hover:text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110 dark:text-gray-400"/></Link>
                 </li>
 
                 <li>
-                <Link href={'https://www.linkedin.com/in/dipak-khade-715389252/'} target="_blank"><FaLinkedin className="text-2xl hover:text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110 dark:text-gray-400"/></Link>
+                <Link href={'https://www.linkedin.com/in/dipak-khade-715389252/'} target="_blank"><FaLinkedin className="text-2xl hover:text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110 dark:text-gray-400"/></Link>
                 </li>
 
 
                 <li>
-                <Link href={'https://instagram.com/dipakkhade272?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" ><FaInstagram className="text-2xl hover:text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110 dark:text-gray-400"/></Link>
+                <Link href={'https://instagram.com/dipakkhade272?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" ><FaInstagram className="text-2xl hover:text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110 dark:text-gray-400"/></Link>
                 </li>
                 <li>
-                <Link href={'https://instagram.com/dipakkhade272?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" ><VscTerminal  className="text-2xl hover:text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110 dark:text-gray-400"/></Link>
+                <Link href={'https://instagram.com/dipakkhade272?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" ><VscTerminal  className="text-2xl hover:text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110 dark:text-gray-400"/></Link>
                 </li>
                
                
@@ -185,9 +185,9 @@ const Header = () => {
                 src={logoimg}
                 width={200}
                 alt="logo"
-                className="mix-blend-multiply bg-purple-400"
+                className="mix-blend-multiply bg-blue-400"
               /> */}
-              <h1 className='text-2xl p-2 text-purple-600 font-extrabold'>&lt; Dipak Khade / &gt;</h1>
+              <h1 className='text-2xl p-2 text-blue-600 font-extrabold'>&lt; Dipak Khade / &gt;</h1>
               <div>
           <ul className="flex mt-4 dark:text-Zinc-900  space-x-5 items-center md:mt-0 lg:mb-6 text-sm font-medium text-gray-500  sm:mb-0 "
              >
@@ -195,23 +195,23 @@ const Header = () => {
             
               
                 <li>
-                    <Link href={'https://github.com/DipakKhade'} target="_blank" ><FaGithub className="text-2xl text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
+                    <Link href={'https://github.com/DipakKhade'} target="_blank" ><FaGithub className="text-2xl text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
 
                 <li>
-                <Link href={'https://twitter.com/dipakKhade272'} target="_blank"><FaXTwitter className="text-2xl text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
+                <Link href={'https://twitter.com/dipakKhade272'} target="_blank"><FaXTwitter className="text-2xl text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
 
                 <li>
-                <Link href={'https://www.linkedin.com/in/dipak-khade-715389252/'} target="_blank"><FaLinkedin className="text-2xl text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
+                <Link href={'https://www.linkedin.com/in/dipak-khade-715389252/'} target="_blank"><FaLinkedin className="text-2xl text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
 
 
                 <li>
-                <Link href={'https://instagram.com/dipakkhade272?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" ><FaInstagram className="text-2xl text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
+                <Link href={'https://instagram.com/dipakkhade272?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" ><FaInstagram className="text-2xl text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
                 <li>
-                <Link href={'https://protfolio-with-next-js-dfx1.vercel.app/'} target="_blank" ><VscTerminal  className="text-2xl text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
+                <Link href={'https://protfolio-with-next-js-dfx1.vercel.app/'} target="_blank" ><VscTerminal  className="text-2xl text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
                
                
@@ -224,7 +224,7 @@ const Header = () => {
                  {
                   "ml-6 p-2 dark:text-white rounded-md text-gray-800 font-semibold cursor-pointer hover:underline":true,
 
-                  'text-purple-500 dark:text-purple-600':currentRoute==='/'
+                  'text-blue-500 dark:text-blue-600':currentRoute==='/'
                  }
                
                 )}>
@@ -235,9 +235,9 @@ const Header = () => {
               <Link href={'/nextjs'}>
                     <li className={clsx(
                  {
-                  "ml-6 p-2 dark:text-white rounded-md hover:text-purple-500 text-gray-800 font-semibold cursor-pointer hover:underline":true,
+                  "ml-6 p-2 dark:text-white rounded-md hover:text-blue-500 text-gray-800 font-semibold cursor-pointer hover:underline":true,
 
-                  'text-purple-500 dark:text-gray-400':currentRoute===`/nextjs`
+                  'text-blue-500 dark:text-gray-400':currentRoute===`/nextjs`
                  }
                
                 )}>
@@ -247,22 +247,22 @@ const Header = () => {
               <Link href={'/webrtc'}>
               <li className={clsx(
                  {
-                  "ml-6 p-2 dark:text-white rounded-md hover:text-purple-500 text-gray-800 font-semibold cursor-pointer hover:underline":true,
+                  "ml-6 p-2 dark:text-white rounded-md hover:text-blue-500 text-gray-800 font-semibold cursor-pointer hover:underline":true,
 
-                  'text-purple-700 dark:text-purple-600':currentRoute==='/webrtc'
+                  'text-blue-700 dark:text-blue-600':currentRoute==='/webrtc'
                  }
                
                 )}>
                 WebRTC
               </li>
               </Link>
-              <li className="ml-6 hover:text-purple-500 dark:text-white p-2 rounded-md text-gray-800 font-semibold cursor-pointer hover:underline">
+              <li className="ml-6 hover:text-blue-500 dark:text-white p-2 rounded-md text-gray-800 font-semibold cursor-pointer hover:underline">
                 Linkedin
               </li>
-              <li className="ml-6 hover:text-purple-500 dark:text-white p-2 rounded-md text-gray-800 font-semibold cursor-pointer hover:underline">
+              <li className="ml-6 hover:text-blue-500 dark:text-white p-2 rounded-md text-gray-800 font-semibold cursor-pointer hover:underline">
                 GitHub
               </li>
-              <li className="ml-6 hover:text-purple-500 dark:text-white p-2 rounded-md text-gray-800 font-semibold cursor-pointer hover:underline">
+              <li className="ml-6 hover:text-blue-500 dark:text-white p-2 rounded-md text-gray-800 font-semibold cursor-pointer hover:underline">
                 PortFolio
               </li>
             </ul>
@@ -280,7 +280,7 @@ const Header = () => {
   alt="img"
   className="rounded-full"
 />
-         <h5 className="m-2 dark:text-purple-500">{session?.user?.name}</h5>
+         <h5 className="m-2 dark:text-blue-500">{session?.user?.name}</h5>
          </div>
          :''
       }
@@ -299,7 +299,7 @@ const Header = () => {
                 src={logoimg}
                 width={200}
                 alt="logo"
-                className="mix-blend-multiply bg-purple-400"
+                className="mix-blend-multiply bg-blue-400"
               />
               <div>
           <ul className="flex mt-4 dark:text-gray-800  space-x-5 items-center md:mt-0 lg:mb-6 text-sm font-medium text-gray-500  sm:mb-0 pb-8"
@@ -308,24 +308,24 @@ const Header = () => {
             
               
                 <li>
-                    <Link href={'https://github.com/DipakKhade'} target="_blank" ><FaGithub className="text-2xl hover:text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
+                    <Link href={'https://github.com/DipakKhade'} target="_blank" ><FaGithub className="text-2xl hover:text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
 
                 <li>
-                <Link href={'https://twitter.com/dipakKhade272'} target="_blank"><FaXTwitter className="text-2xl hover:text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
+                <Link href={'https://twitter.com/dipakKhade272'} target="_blank"><FaXTwitter className="text-2xl hover:text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
 
                 <li>
-                <Link href={'https://www.linkedin.com/in/dipak-khade-715389252/'} target="_blank"><FaLinkedin className="text-2xl hover:text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
+                <Link href={'https://www.linkedin.com/in/dipak-khade-715389252/'} target="_blank"><FaLinkedin className="text-2xl hover:text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
 
 
                 <li>
-                <Link href={'https://instagram.com/dipakkhade272?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" ><FaInstagram className="text-2xl hover:text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
+                <Link href={'https://instagram.com/dipakkhade272?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" ><FaInstagram className="text-2xl hover:text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
 
                <li>
-                <Link href={'https://protfolio-with-next-js-dfx1.vercel.app/'} target="_blank" ><VscTerminal  className="text-2xl hover:text-purple-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
+                <Link href={'https://protfolio-with-next-js-dfx1.vercel.app/'} target="_blank" ><VscTerminal  className="text-2xl hover:text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
                
             </ul>
@@ -334,7 +334,7 @@ const Header = () => {
            
           </div> */}
      
-<hr className=" border-purple-400 sm:mx-auto dark:border-gray-200 hidden md:block"/>
+<hr className=" border-blue-400 sm:mx-auto dark:border-gray-200 hidden md:block"/>
       
      
     </>

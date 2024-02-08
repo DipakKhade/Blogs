@@ -10,8 +10,8 @@ const Footer = () => {
   <div className="mx-auto text-cente">
       
       
-        {/* <p className='dark:text-purple-700'>&copy; 2024 - Developed by Dipak Khade. All right reserved.</p> */}
-      <ul className="flex flex-wrap justify-center items-center  text-gray-900 dark:text-purple-500">
+        {/* <p className='dark:text-blue-700'>&copy; 2024 - Developed by Dipak Khade. All right reserved.</p> */}
+      <ul className="flex flex-wrap justify-center items-center  text-gray-900 dark:text-blue-500">
           <li>
               <Link href={'/'} className="mr-4 hover:underline md:mr-6 ">About</Link>
           </li>

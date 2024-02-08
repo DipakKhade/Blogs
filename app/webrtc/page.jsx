@@ -2,8 +2,8 @@ export default function WebRTCBlog() {
   return (
     <div className="min-h-screen flex justify-center items-center  dark:text-white">
       <div className="max-w-4xl p-8 rounded-lg">
-        <h1 className="text-4xl font-bold mb-6 text-center text-purple-400">Understanding WebRTC: Revolutionizing Real-time Communication</h1>
-        <span className="mb-5 inline-block rounded bg-purple-500 px-4 py-1 text-center text-xs font-semibold leading-loose text-white">
+        <h1 className="text-4xl font-bold mb-6 text-center text-blue-400">Understanding WebRTC: Revolutionizing Real-time Communication</h1>
+        <span className="mb-5 inline-block rounded bg-blue-500 px-4 py-1 text-center text-xs font-semibold leading-loose text-white">
                   27 Jan 2024
                 </span>
         <p className="text-lg mb-4">
@@ -100,7 +100,7 @@ To get started, download and install Node.js. Then open up a terminal or command
                   
               </form>
            
-              <div className='btn bg-purple-400'>commit</div>
+              <div className='btn bg-blue-400'>commit</div>
           </section>
       </div>
       </div>

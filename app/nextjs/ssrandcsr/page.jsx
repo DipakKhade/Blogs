@@ -15,15 +15,15 @@ const Page = () => {
     <>
     <div className=' p-4 font-medium  dark:text-white'>
     <nav>
-        <ul className="flex p-4 space-x-4 text-xl font-bold text-purple-500 flex-wrap">
-        <ul className="md:p-4 md:space-x-4 text-xl font-bold text-purple-500 md:flex">
+        <ul className="flex p-4 space-x-4 text-xl font-bold text-blue-500 flex-wrap">
+        <ul className="md:p-4 md:space-x-4 text-xl font-bold text-blue-500 md:flex">
        <Link href={'/nextjs'}> <li className='ml-6 p-2 rounded-md text-gray-800 font-semibold cursor-pointer hover:underline'>Project Setup</li></Link>
         {routelink.map((i,index)=>(
           <Link key={index}  href={`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`}><li className={clsx(
                  {
                   "ml-6 p-2 rounded-md font-semibold cursor-pointer dark:text-white hover:underline":true,
 
-                  'text-purple-500 dark:text-purple-600':currentRoute===`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`
+                  'text-blue-500 dark:text-blue-600':currentRoute===`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`
                  }
                
                 )}>{i}</li></Link>
@@ -35,7 +35,7 @@ const Page = () => {
       <div>
         <p className='p-6'>In Next js Every Component is Server Component by default . to make it Client Component we have to add &quot;use client&quot; at the top</p>
       </div>
-      <h2 className='text-purple-500 text-2xl font-bold'>Partial Pre-rendering and SSR</h2>
+      <h2 className='text-blue-500 text-2xl font-bold'>Partial Pre-rendering and SSR</h2>
       <p className='p-6'>Pre-rendering is the practice of creating a web page HTML before a user requests it, either during the build or deployment time. Next.js offers two pre-rendering options for optimal speed: Static Generation and Server-side rendering (SSR). 
 
 Static Generation works with data that is already available at build time which makes better performance over Server-side rendering. In Server-side rendering, data fetching and rendering are done at the request time. Still Server-side rendering is preferable compared to client-render apps. And if we use Next.js, we will have server rendering by default.
@@ -49,7 +49,7 @@ alt=''
     />
     </div>
 <div className='p-4 dark:bg-zinc-900 dark:text-white'>
-    <h2 className='text-purple-500 text-2xl font-bold'>Client Side Rendering</h2>
+    <h2 className='text-blue-500 text-2xl font-bold'>Client Side Rendering</h2>
     <p className='p-6'>Instead of sending a new request to the server every time a user navigation happens, what if we made the client handle that navigation?
 
 That would mean that the first time the server responds, it will send the rendering code to the client. This enables the client to handle the page rendering as the user navigates through the site</p>

@@ -78,7 +78,7 @@ server.listen(3001, () => {
   return (
     <div className="min-h-screen justify-center items-center dark:bg-black dark:text-white">
       <div className="max-w-6xl p-8  md:pl-[22vw]">
-        <h2 className="text-4xl font-bold mb-6 text-center text-purple-400">
+        <h2 className="text-4xl font-bold mb-6 text-center text-blue-400">
           The WebSocket API
         </h2>
 
@@ -132,7 +132,7 @@ server.listen(3001, () => {
 
 
      <div className="max-w-6xl p-8  md:pl-[22vw]">
-     <h2 className="text-2xl font-bold text-purple-400">WebSockets Overview</h2>
+     <h2 className="text-2xl font-bold text-blue-400">WebSockets Overview</h2>
 
 <ol>
   <li><strong>Establishing a Connection:</strong>
@@ -201,7 +201,7 @@ server.listen(3001, () => {
                  
              </form>
           
-             <div className='btn bg-purple-400'>commit</div>
+             <div className='btn bg-blue-400'>commit</div>
          </section>
      </div>
     </div>

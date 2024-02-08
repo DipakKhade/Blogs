@@ -18,8 +18,8 @@ const page = () => {
     <>
       <div className="p-8  dark:text-white">
       <nav>
-        <ul className="flex p-4 space-x-4 text-xl font-bold text-purple-500 flex-wrap">
-        <li className='ml-6 p-2 rounded-md text-purple-500 dark:text-white font-semibold cursor-pointer hover:underline'>Project Setup</li>
+        <ul className="flex p-4 space-x-4 text-xl font-bold text-blue-500 flex-wrap">
+        <li className='ml-6 p-2 rounded-md text-blue-500 dark:text-white font-semibold cursor-pointer hover:underline'>Project Setup</li>
          {routelink.map((i,index)=>(
           <Link key={index}  href={`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`}><li className="ml-6 p-2 rounded-md  font-semibold cursor-pointer hover:underline"
                 >{i}</li></Link>
@@ -29,7 +29,7 @@ const page = () => {
       </nav>
         <article>
           <div>
-            <h3 className="text-2xl p-2 text-purple-500">
+            <h3 className="text-2xl p-2 text-blue-500">
               Create a Next.js app
             </h3>
             <p>
@@ -56,7 +56,7 @@ const page = () => {
 
           </div>
 
-          <h3 className="pt-8 text-xl text-purple-500">start working on project </h3>
+          <h3 className="pt-8 text-xl text-blue-500">start working on project </h3>
           <div>
           <h5>You get this as a started Project :</h5>
             <Image

@@ -2,10 +2,11 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-import TracingBeam  from "../../components/ui/tracing-beam";
-import { Contact } from "lucide-react";
 import Content from "@/components/Content";
 import Loading from "../loading";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import SlugHeader from "@/components/SlugHeader";
+import Header from "@/components/Header";
 export function Page({ params }) {
   const [blog, setBlog] = useState(null);
   const [fetched, setFetched] = useState(false);
@@ -15,7 +16,7 @@ const [mounted, setMounted] = useState(false)
       try {
         const local = "http://localhost:3000";
         const domain='https://dipak-khade-blogs.vercel.app'
-        const data = await fetch(`${domain}/api/blogs`);
+        const data = await fetch(`${local}/api/blogs`);
         const response = await data.json();
         const currentBlog = await response.blogs.find((blog) => blog._id === params._id);
         setBlog(currentBlog);
@@ -40,9 +41,13 @@ const [mounted, setMounted] = useState(false)
 
   return (
     <>
+    {/* <SlugHeader/> */}
+    <Header/>
+    <MaxWidthWrapper>
+    
       {fetched && blog && (
         
-    <div className="mt-2 md:mt-24 p-3">
+    <div className="mt-2 p-3">
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
       <Content/>
           <div className="mb-10">
@@ -65,7 +70,10 @@ const [mounted, setMounted] = useState(false)
                   className="rounded-lg mb-10 object-cover"
                 />
               )}
+              <div className={twMerge( "text-xl mb-4")}>
+
               {blog.maindesc[0]}
+              </div>
               
               {blog?.image && blog.mainimage && blog.mainimage.length >= 3  && (
                 
@@ -78,7 +86,10 @@ const [mounted, setMounted] = useState(false)
                 />
               )}
 
-              {blog?.maindesc[1]}
+              <div className={twMerge( "text-xl mb-4")}>
+
+{blog.maindesc[1]}
+</div>
 
               {blog?.image && blog.mainimage && blog.mainimage.length >= 3  && (
               <Image
@@ -89,7 +100,10 @@ const [mounted, setMounted] = useState(false)
                   className="rounded-lg mb-10 object-cover"
                 />
               )}
-              {blog?.maindesc[2]}
+              <div className={twMerge( "text-xl mb-4")}>
+
+{blog.maindesc[2]}
+</div>
             </div>
           </div>
    
@@ -100,6 +114,7 @@ const [mounted, setMounted] = useState(false)
 </div>
     </div>
       )}
+      </MaxWidthWrapper>
     </>
   );
 }

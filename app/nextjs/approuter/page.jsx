@@ -36,15 +36,15 @@ const Page = () => {
   return (
     <div className='p-4  dark:text-white'>
       <nav>
-        <ul className="flex p-4 space-x-4 text-xl font-bold text-purple-500 flex-wrap">
-        <ul className="md:p-4 md:space-x-4 text-xl font-bold text-purple-500 md:flex">
+        <ul className="flex p-4 space-x-4 text-xl font-bold text-blue-500 flex-wrap">
+        <ul className="md:p-4 md:space-x-4 text-xl font-bold text-blue-500 md:flex">
        <Link href={'/nextjs'}> <li className='ml-6 p-2 rounded-md text-gray-800 font-semibold cursor-pointer hover:underline'>Project Setup</li></Link>
         {routelink.map((i,index)=>(
           <Link key={index}  href={`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`}><li className={clsx(
                  {
                   "ml-6 p-2 rounded-md dark:text-whitefont-semibold cursor-pointer hover:underline":true,
 
-                  'text-purple-500 dark:text-purple-600':currentRoute===`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`
+                  'text-blue-500 dark:text-blue-600':currentRoute===`/nextjs/${i.replace(/\s/g, '').toLowerCase()}`
                  }
                
                 )}>{i}</li></Link>
@@ -54,7 +54,7 @@ const Page = () => {
         </ul>
       </nav>
 
-     <h3 className='text-2xl font-bold text-purple-500 p-4'>Routing in Next js 14</h3>
+     <h3 className='text-2xl font-bold text-blue-500 p-4'>Routing in Next js 14</h3>
 
      <div className='p-4'>
         <h4>Making a in routes in next.js 14 is based on folder structure , You have to make a folder with name of route and then inside that folder you hav to make a page.jsx of page.tsx file  </h4>
@@ -69,7 +69,7 @@ className='mix-blend-multiply'
         
 <div className="mockup-code bg-slate-950 md:w-[80vw]">
   <pre data-prefix="$"><code>app/about/page.tsx</code></pre> 
-  <pre data-prefix=">" className="text-purple-500"><code>
+  <pre data-prefix=">" className="text-blue-500"><code>
   {codeSnippet.trim()}
 
   </code></pre> 
@@ -85,7 +85,7 @@ alt=''
         />
 </div>
 <div className='p-4'>
-<h4 className='text-xl text-purple-500 font-semibold'>Dynamic Routes</h4>
+<h4 className='text-xl text-blue-500 font-semibold'>Dynamic Routes</h4>
 <p>A Dynamic Segment can be created by wrapping a file or folder name in square brackets: [segmentName]. For example, [id] or [slug]</p>
 
 <p>Where slug or id is unique and based on these the data is fetched</p>

@@ -14,7 +14,7 @@ const page = () => {
               <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Unlocking the Power of Tailwind CSS: A Comprehensive Guide</h1>
           </header>
           <p className="lead">Tailwind CSS is a revolutionary utility-first CSS framework that allows developers to rapidly build modern and responsive web interfaces. In this guide, we ll delve into the core features of Tailwind CSS and explore how to leverage its power effectively in your projects.</p>
-          <h2 className='text-2xl text-purple-400'>What is Tailwind CSS?</h2>
+          <h2 className='text-2xl text-blue-400'>What is Tailwind CSS?</h2>
           <p>Tailwind CSS is a highly customizable, low-level CSS framework that provides a set of utility classes to style your HTML elements directly. Unlike traditional CSS frameworks that come with pre-designed components, Tailwind CSS focuses on providing utility classes for common CSS properties, enabling developers to create unique and responsive designs with ease.</p>
           <h2>Key Features of Tailwind CSS</h2>
           <p>Here are some of the key features that make Tailwind CSS stand out:</p>
@@ -45,7 +45,7 @@ const page = () => {
                   </button>
               </form>
            
-              <div className='btn bg-purple-400'>commit</div>
+              <div className='btn bg-blue-400'>commit</div>
           </section>
       </article>
   </div>
