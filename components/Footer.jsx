@@ -20,9 +20,7 @@ const Footer = () => {
           <li>
               <Link href={'/'} className="mr-4 hover:underline md:mr-6">Blog</Link>
           </li>
-          <li>
-              <Link href={'/'} className="mr-4 hover:underline md:mr-6">Affiliate Program</Link>
-          </li>
+         
         
           <li>
               <Link href={'/'} className="mr-4 hover:underline md:mr-6">Contact</Link>

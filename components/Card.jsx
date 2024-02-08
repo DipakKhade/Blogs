@@ -32,8 +32,33 @@ const [loadblogs, setloadblogs] = useState(false)
   return (
     <>
      <h3 className="md:ml-[46vw] ml-24 mb-6 text-4xl dark:text-white">Blogs</h3>
+
       <div className="flex flex-wrap justify-center gap-8 hover:cursor-pointer p-4 md:p-0">
-     
+
+     {/* git  */}
+
+
+
+     <Link href={'/github_Spam_Pull_Requests'}>
+
+<div className="card w-80 md:w-96 hover:opacity-90 dark:text-white rounded-lg p-3">
+<figure><Image src={'https://pbs.twimg.com/media/GFqs03QX0AAcBcn.jpg:large'} width={300} height={100} alt="blogimg" className="object-cover h-48 w-80 border" /></figure>
+<div className="card-body">
+<h2 className="card-title text-xl hover:text-slate-700">
+How NOT to do Open-Source
+</h2>
+
+<div className="card-actions flex justify-end">
+<div>Feb 8, 2024</div>
+</div>
+</div>
+</div>
+
+
+</Link>
+
+
+
         {fetched ? (
          blog.blogs.map((b) => (
             <Link key={b._id} href={`${b._id}`}>

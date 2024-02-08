@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vs } from 'react-syntax-highlighter/dist/esm/styles/prism';
 const page = () => {
   const code1=`
   <!DOCTYPE html>
@@ -59,7 +60,7 @@ const page = () => {
   `
   return (
     <div>
-      <main className="pt-8 pb-16 lg:pt-16 lg:pb-24  dark:bg-zinc-900 dark:text-white antialiased">
+      <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 antialiased">
         <div className=" justify-between px-4 mx-auto max-w-screen-xl ">
         <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
     <header className="mb-4 lg:mb-6 not-format">
@@ -88,23 +89,20 @@ const page = () => {
 <p>HTML tree refers to the hierarchical structure of HTML elements on a webpage. Its essentially a representation of how HTML elements are nested within each other.
 
 Here s a simple example of an HTML tree:</p>
-      <div className="bg-slate-950 text-white p-4 rounded-md mockup-code">
-          <pre>
-            <pre data-prefix="$" className="text-green-600">
-              <code>HTML</code>
-            </pre>
-            <code> {code1.trim()}</code>
-          </pre>
+      <div>
+      <SyntaxHighlighter language="javascript" style={vs}>
+      {code1.trim()}
+    </SyntaxHighlighter>
+          
         </div>
     </div>
 
     <p>HTML tree structure can be visualized like this:</p>
 
-    <div className="bg-slate-950 text-white p-4 rounded-md mockup-code">
-          <pre>
-           
-            <code> {code2.trim()}</code>
-          </pre>
+    <div >
+    <SyntaxHighlighter language="javascript" style={vs}>
+      {code2.trim()}
+    </SyntaxHighlighter>
         </div>
         <p>Each element in the HTML tree is nested inside its parent element, forming a hierarchy. This hierarchy is crucial for understanding the structure of a webpage and is used by web browsers to render the content correctly.</p>
 </article>

@@ -6,7 +6,8 @@ import route3 from '../../../resources/routing3.png'
 import route4 from '../../../resources/routing4.png'
 import Link from 'next/link'
 import clsx from "clsx";
-
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vs } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { usePathname } from "next/navigation";
 const Page = () => {
   
@@ -67,15 +68,9 @@ className='mix-blend-multiply'
         />
 <p className='p-2'>if you write this code in Your dashbord/page.tsx , its route address is localhost:3000/dashbord</p>
         
-<div className="mockup-code bg-slate-950 md:w-[80vw]">
-  <pre data-prefix="$"><code>app/about/page.tsx</code></pre> 
-  <pre data-prefix=">" className="text-blue-500"><code>
-  {codeSnippet.trim()}
-
-  </code></pre> 
-
-</div>
- 
+<SyntaxHighlighter language="javascript" style={vs}>
+      {codeSnippet.trim()}
+    </SyntaxHighlighter>
 <div className='p-4'>
 <Image
 src={route3}

@@ -18,7 +18,7 @@ const Header = () => {
    
 
       <button
-        className="inline-block sm:hidden z-50"
+        className="inline-block sm:hidden z-50 pt-6"
         onClick={toggle}
         aria-label="Hamburger Menu"
       >
