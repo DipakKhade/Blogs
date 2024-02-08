@@ -3,17 +3,16 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Loading from "./loading";
 import Link from "next/link";
-import {PaginationDemo} from '../components/Pagination'
 export function Card() {
   const [blog, setBlog] = useState();
   const [fetched, setFetched] = useState(false);
-
+const [loadblogs, setloadblogs] = useState(false)
   useEffect(() => {
     const fetchData = async () => {
       try {
         const local = "http://localhost:3000/";
         const domain = "https://dipak-khade-blogs.vercel.app";
-        const data = await fetch(`${domain}/api/blogs`);
+        const data = await fetch(`${local}/api/blogs`);
         const response = await data.json();
         response.blogs.sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -27,6 +26,8 @@ export function Card() {
 
     fetchData();
   }, []);
+
+
 
   return (
     <>
@@ -57,9 +58,26 @@ export function Card() {
           <Loading />
         )}
       </div>
-     <div className="pt-24">
-     <PaginationDemo/>
-     </div>
+      <div
+    className="fter:h-px my-24 flex items-center before:h-px before:flex-1  before:bg-gray-300 before:content-[''] after:h-px after:flex-1 after:bg-gray-300  after:content-['']">
+
+<div>
+{
+  loadblogs && <div className="flex">no more blogs to fetch</div>
+}
+    <button type="button"
+    onClick={()=>setloadblogs(true)}
+        className="flex items-center rounded-full border border-gray-300 bg-secondary-50 px-3 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 dark:bg-slate-50 dark:hover:bg-slate-500">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="mr-1 h-4 w-4">
+            <path fillRule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clipRule="evenodd" />
+        </svg>
+        View More
+    </button>
+</div>
+
+</div>
     </>
   );
 }
