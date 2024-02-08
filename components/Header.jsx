@@ -74,12 +74,8 @@ const Header = () => {
         >
           About
         </Link>
-        <Link
-          href={"https://protfolio-with-next-js-dfx1.vercel.app/contact"}
-          className="mx-2"
-        >
-          Contact
-        </Link>
+        <AuthButton/>
+       
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
           className={cx(
@@ -97,6 +93,7 @@ const Header = () => {
       </nav>
 
       <nav className="sm:flex border gap-6 w-screen justify-end backdrop-blur-sm z-50 fixed p-6 top-0 hidden rounded-sm left-0">
+      <div className="mt-2">
         <Link href="/" className="mr-2 dark:text-white">
           Home
         </Link>
@@ -112,13 +109,14 @@ const Header = () => {
         >
           Contact
         </Link>
+        </div>
            <div>
 <AuthButton/>
 </div>
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
           className={cx(
-            "w-6 h-6 ease mr-36  flex items-center justify-center rounded-full p-1 dark:text-white",
+            "w-6 h-6 ease mr-36 mt-2  flex items-center justify-center rounded-full p-1 dark:text-white",
             mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
           )}
           aria-label="theme-switcher"
