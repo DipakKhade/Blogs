@@ -35,7 +35,7 @@ const page = () => {
 <p>The aftermath was staggering. A flood of pull requests inundated the repository, each altering a single line in the README file. Understandably, the community reacted with frustration and dismay. But who bears the blame in this scenario?</p>
 
 <p>
-It's easy to point fingers at the beginners who followed the tutorial s guidance. However, the fault lies not in malintent but in misguided instruction. As someone who once navigated the complexities of learning to code, I empathize with those who earnestly attempt to follow tutorials to the letter, trusting the expertise of the instructor.
+Its easy to point fingers at the beginners who followed the tutorial s guidance. However, the fault lies not in malintent but in misguided instruction. As someone who once navigated the complexities of learning to code, I empathize with those who earnestly attempt to follow tutorials to the letter, trusting the expertise of the instructor.
 </p>
 
 <p>
