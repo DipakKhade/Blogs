@@ -69,7 +69,7 @@ const Header = () => {
          Home
         </Link>
         <Link
-          href={"https://protfolio-with-next-js-dfx1.vercel.app/"}
+          href={"https://dipakkhade-dev.vercel.app/"}
           className="mx-2"
         >
           About
@@ -98,13 +98,13 @@ const Header = () => {
          Home
         </Link>
         <Link
-          href={"https://protfolio-with-next-js-dfx1.vercel.app/"}
+          href={"https://dipakkhade-dev.vercel.app/"}
           className="mx-2 dark:text-white hover:text-blue-600 hover:underline"
         >
           About
         </Link>
         <Link
-          href={"https://protfolio-with-next-js-dfx1.vercel.app/contact"}
+          href={"https://dipakkhade-dev.vercel.app/contact"}
           className="mx-2 dark:text-white hover:text-blue-600 hover:underline"
         >
           Contact

@@ -29,7 +29,7 @@ const Footer = () => {
       <div className=" text-gray-500 dark:text-gray-400 flex">
       <TbBrandNextjs className="mt-1"/><p>Coded In Next.js 14</p>
       </div>
-      <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023-24 <Link href={'https://protfolio-with-next-js-dfx1.vercel.app/'}>Dipak Khade</Link>. All Rights Reserved.</span>
+      <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023-24 <Link href={'https://dipakkhade-dev.vercel.app/'}>Dipak Khade</Link>. All Rights Reserved.</span>
   </div>
 </footer>
     </>

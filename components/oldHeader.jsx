@@ -211,7 +211,7 @@ const Header = () => {
                 <Link href={'https://instagram.com/dipakkhade272?igshid=OGQ5ZDc2ODk2ZA=='} target="_blank" ><FaInstagram className="text-2xl text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
                 <li>
-                <Link href={'https://protfolio-with-next-js-dfx1.vercel.app/'} target="_blank" ><VscTerminal  className="text-2xl text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
+                <Link href={'https://dipakkhade-dev.vercel.app/'} target="_blank" ><VscTerminal  className="text-2xl text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
                
                
@@ -325,7 +325,7 @@ const Header = () => {
                 </li>
 
                <li>
-                <Link href={'https://protfolio-with-next-js-dfx1.vercel.app/'} target="_blank" ><VscTerminal  className="text-2xl hover:text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
+                <Link href={'https://dipakkhade-dev.vercel.app/'} target="_blank" ><VscTerminal  className="text-2xl hover:text-blue-700 transition ease-in-out hover:-translate-y-1 hover:scale-110"/></Link>
                 </li>
                
             </ul>
