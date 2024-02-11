@@ -63,10 +63,10 @@ const Terminal = () => {
   return (
       
       <TerminalContextProvider>
-      <div className="border border-blue-700 md:w-[70vw] md:m-auto dark:bg-slate-950 rounded-sm h-80 overflow-y-hidden">
+      <div className="border border-blue-700 w-[85vw] md:w-[70vw] m-auto dark:bg-slate-950 rounded-sm h-80 overflow-y-hidden">
       <ReactTerminal
         prompt={
-          data && data.user ? <span className="text-blue-700">`$ ${data.user.name} &gt;&gt; `</span>:   <span className="text-blue-700">$ dipakkhade-dev &gt;&gt;</span>
+          data && data.user ? <span className="text-blue-700">{data.user.name} &gt;&gt; </span>:   <span className="text-blue-700">$ dipakkhade-dev &gt;&gt;</span>
         }
         welcomeMessage={
           <div>

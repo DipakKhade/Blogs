@@ -6,7 +6,8 @@ import Terminal from "@/components/Terminal";
 export default function Home() {
   return (
   <>
-  <main className="min-h-screen">
+  <main
+   className="min-h-screen ">
   <Content/>
   <div className="text-center flex flex-col item-center">
 
@@ -14,7 +15,6 @@ export default function Home() {
           </div>
  <Terminal/>
  <Card/>
-
   </main>
   </>
   )
