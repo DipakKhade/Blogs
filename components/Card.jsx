@@ -12,7 +12,7 @@ const [loadblogs, setloadblogs] = useState(false)
       try {
         const local = "http://localhost:3000/";
         const domain = "https://dipak-khade-blogs.vercel.app";
-        const data = await fetch(`${local}/api/blogs`);
+        const data = await fetch(`${domain}/api/blogs`);
         const response = await data.json();
         response.blogs.sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -31,7 +31,7 @@ const [loadblogs, setloadblogs] = useState(false)
 
   return (
     <>
-     <h3 className="md:ml-[46vw] ml-24 mb-6 text-4xl dark:text-white">Blogs</h3>
+     <h3 className="md:ml-[46vw] ml-24 mb-6 text-4xl dark:text-white pt-12">Blogs</h3>
 
       <div className="flex flex-wrap justify-center gap-8 hover:cursor-pointer p-4 md:p-0">
 

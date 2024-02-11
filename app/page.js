@@ -1,7 +1,8 @@
-
+'use client';
 import Content  from "../components/Content";
 import { Card } from "@/components/Card";
 import {TypewriterEffectSmoothDemo} from '../components/TagLine2'
+import Terminal from "@/components/Terminal";
 export default function Home() {
   return (
   <>
@@ -11,6 +12,7 @@ export default function Home() {
 
         <TypewriterEffectSmoothDemo/>
           </div>
+ <Terminal/>
  <Card/>
 
   </main>
